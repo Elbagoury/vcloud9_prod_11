@@ -1,0 +1,148 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* helpdesk_ticket_sequence
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-01 13:31+0000\n"
+"PO-Revision-Date: 2018-02-01 13:31+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.ui.view,arch_db:helpdesk_ticket_sequence.heldesk_ticket_sequence_form_inherit2
+msgid "Choose wether you want to tag ticket subject/heading with the ticket number..e.g '#00023 - Cannot Print PDF'"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.model.fields,field_description:helpdesk_ticket_sequence.field_res_company_tag_issue
+msgid "Choose whether to tag ticket subjects with a ticket number by default?"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.model,name:helpdesk_ticket_sequence.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.model.fields,field_description:helpdesk_ticket_sequence.field_res_company_issue_sqn_id
+msgid "Default Helpdesk Ticket Numbering "
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.model.fields,field_description:helpdesk_ticket_sequence.field_res_config_settings_issue_sqn_id
+msgid "Default Ticket Numbering Plan"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.ui.view,arch_db:helpdesk_ticket_sequence.view_helpdesk_ticket_sequence_config_settings
+msgid "Default Ticket Numbering Sequence"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.model.fields,help:helpdesk_ticket_sequence.field_helpdesk_team_tag_issue
+msgid "Enable it tag new tickets subject with a ticket number..                e.g '#16-00003 - Data Migration problem'"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.ui.view,arch_db:helpdesk_ticket_sequence.view_helpdesk_ticket_sequence_config_settings
+msgid "Enable ticket title tagging with a number..e.g '[#HD-544] support required'"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.model.fields,help:helpdesk_ticket_sequence.field_res_config_settings_tag_issue
+msgid "Enable/Disable the tagging of ticket subjects with a number..                e.g '16-00001 - Migration of data failed'.."
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.ui.view,arch_db:helpdesk_ticket_sequence.view_helpdesk_ticket_sequence_config_settings
+msgid "Help Desk"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.model,name:helpdesk_ticket_sequence.model_helpdesk_team
+msgid "Helpdesk Team"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.model.fields,help:helpdesk_ticket_sequence.field_helpdesk_team_issue_sqn_id
+msgid "Select number sequence to use for tickets for the team"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.ui.view,arch_db:helpdesk_ticket_sequence.heldesk_ticket_sequence_form_inherit2
+msgid "Select the ticket numbering sequence to use for assigning a unique ticket number to tickets created for this support team."
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.ui.view,arch_db:helpdesk_ticket_sequence.view_helpdesk_ticket_sequence_config_settings
+msgid "Sequence"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.ui.view,arch_db:helpdesk_ticket_sequence.view_helpdesk_ticket_sequence_config_settings
+msgid "Set the default sequence for tickets"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.model.fields,field_description:helpdesk_ticket_sequence.field_helpdesk_team_tag_issue
+msgid "Tag Ticket Subject/Heading"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.model.fields,field_description:helpdesk_ticket_sequence.field_res_config_settings_tag_issue
+msgid "Tag Ticket Subjects with Ticket Number"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.ui.view,arch_db:helpdesk_ticket_sequence.view_helpdesk_ticket_sequence_config_settings
+msgid "Tag titles?"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.model.fields,help:helpdesk_ticket_sequence.field_res_config_settings_issue_sqn_id
+msgid "This is the default numbering plan for tickets in case the                support teams do not have one assigned"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.model,name:helpdesk_ticket_sequence.model_helpdesk_ticket
+msgid "Ticket"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.model.fields,field_description:helpdesk_ticket_sequence.field_helpdesk_ticket_issue_sqn
+msgid "Ticket Number"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.model.fields,field_description:helpdesk_ticket_sequence.field_helpdesk_team_issue_sqn_id
+#: model:ir.ui.view,arch_db:helpdesk_ticket_sequence.heldesk_ticket_sequence_form_inherit2
+msgid "Ticket Numbering"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.ui.view,arch_db:helpdesk_ticket_sequence.view_helpdesk_ticket_sequence_config_settings
+msgid "Ticket Title Tagging"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.model.fields,help:helpdesk_ticket_sequence.field_res_company_issue_sqn_id
+msgid "a default ticket numbering sequence for tickets without support team numbering"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.model.fields,help:helpdesk_ticket_sequence.field_helpdesk_ticket_issue_sqn
+msgid "a unique ref number assigned to to the ticket to identify"
+msgstr ""
+
+#. module: helpdesk_ticket_sequence
+#: model:ir.model,name:helpdesk_ticket_sequence.model_res_config_settings
+msgid "res.config.settings"
+msgstr ""
+
