@@ -1,0 +1,64 @@
+<odoo>
+<data>
+<record model="ir.ui.view" id="helpdesk_ticket_sequence_form_inherit1">
+    <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form"/>
+    <field name="name">Helpdesk Ticket Number</field>
+    <field name="model">helpdesk.ticket</field>
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//button[@name= 'toggle_active']" position="before">
+                <button name="do_nothing" type="object" class="oe_stat_button" icon="fa-hashtag" style="width:200px;" readonly="1">
+                    <field name="issue_sqn" widget="statinfo"/>
+                </button>
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record model="ir.ui.view" id="heldesk_ticket_sequence_form_inherit2">
+    <field name="inherit_id" ref="helpdesk.helpdesk_team_view_form"/>
+    <field name="name">Support Team Settings</field>
+    <field name="model">helpdesk.team</field>
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name= 'company_id']" position="after">
+                    <h2 class="mt32">Ticket Numbering</h2>
+                    <div class="row mt16" id="numbering">
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <span class="input-group-addon"/>
+                                <div class="form-control" style="float: none;">
+                                    <span class="fa fa-3x fa-sort-numeric-asc pull-right"/>
+                                    <label for="issue_sqn_id"/>
+                                    <div class="text-muted">
+                                         Select the ticket numbering sequence to use for assigning a unique ticket number to tickets created for this support team.
+                                    </div>
+                                    <div>
+                                        <hr class="mt8 mb8"/>
+                                        <field name="issue_sqn_id"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <field name="tag_issue" style="padding: 12px; margin: 0"/>
+                                </span>
+                                <div class="form-control" style="float: none;">
+                                    <span class="fa fa-3x fa-tag pull-right"/>
+                                    <label for="tag_issue"/>
+                                    <div class="text-muted">
+                                        Choose wether you want to tag ticket subject/heading with the ticket number..e.g '#00023 - Cannot Print PDF'
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </xpath>
+        </data>
+    </field>
+</record>
+
+</data>
+</odoo>

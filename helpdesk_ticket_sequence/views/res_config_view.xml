@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+    <record id="view_helpdesk_ticket_sequence_config_settings" model="ir.ui.view">
+        <field name="name">Helpdesk Ticket Base Settings</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='business_documents']" position="after">
+            	<div id="helpdesk_settings">
+					<h2>Help Desk</h2>
+					<div class="row mt16 o_settings_container">
+						<div class="col-xs-12 col-md-6 o_setting_box">
+							<div class="o_setting_right_pane">
+								<label string="Default Ticket Numbering Sequence"/>
+								<span class="fa fa-lg fa-building-o" title="Values set here are company-specific." groups="base.group_multi_company"/>
+								<div class="text-muted">
+									Set the default sequence for tickets
+								</div>
+								<div class="content-group">
+									<div class="mt16 row">
+										<label for="issue_sqn_id" string="Sequence" class="col-xs-3 col-md-3 o_light_label"/>
+										<field name="issue_sqn_id" class="oe_inline" required="1"/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-6 o_setting_box">
+							<div class="o_setting_right_pane">
+								<label string="Ticket Title Tagging"/>
+								<span class="fa fa-lg fa-building-o" title="Values set here are company-specific." groups="base.group_multi_company"/>
+								<div class="text-muted">
+									Enable ticket title tagging with a number..e.g '[#HD-544] support required'
+								</div>
+								<div class="content-group">
+									<div class="mt16 row">
+										<label for="tag_issue" string="Tag titles?" class="col-xs-3 col-md-3 o_light_label"/>
+										<field name="tag_issue" class="oe_inline" required="1"/>
+									</div>
+								</div>
+							</div>
+						</div>
+            		</div>
+            	</div>
+        	</xpath>
+        </field>
+    </record>
+    </data>
+</odoo>
+
