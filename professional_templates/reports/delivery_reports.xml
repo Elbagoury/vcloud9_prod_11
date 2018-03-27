@@ -1,0 +1,14 @@
+<openerp>
+    <data>
+
+        <report
+            string="Delivery Slip"
+            id="stock.action_report_delivery"
+            model="stock.picking"
+            report_type="qweb-pdf"
+            name="professional_templates.report_deliveryslip"
+            file="professional_templates.report_deliveryslip"
+        />
+
+    </data>
+</openerp>

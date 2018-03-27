@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <template id="DN_1_document" name="Modern Template">
+ <!-- Multicompany -->
+                <t t-if="o and 'company_id' in o">
+                    <t t-set="company" t-value="o.company_id"></t>
+                </t>
+                <t t-if="not o or not 'company_id' in o">
+                    <t t-set="company" t-value="res_company"></t>
+                </t>
+                <div t-attf-style="color:{{style.text_color}} !important;font-size:{{style.header_font}}px !important;font-family:{{style.font_family}} !important;" class="header">
+                    <t t-if="style.header">
+                       <div class="col-xs-7" style="padding-left:0px;">
+                         <span t-if="style.logo">
+			    <span itemprop="image" t-field="style.logo" t-field-options='{"widget": "image"}'/>
+			 </span>
+			 <span t-if="not style.logo and company.logo">
+			    <span itemprop="image" t-field="company.logo" t-field-options='{"widget": "image"}'/>
+			</span>
+			 <span t-if="not style.logo and not company.logo">
+			    <span itemprop="image" t-field="company.logo" t-field-options='{"widget": "image"}'/>
+			</span>
+                       <div t-if="company.twitter or company.facebook or company.facebook" t-attf-style="background-color:{{style.theme_color}}; width:auto; 
+			float:left; padding-left:15px; color:{{style.theme_txt_color}}; padding-right:15px; padding-top:2px; padding-bottom:2px;">
+                      <span t-if="company.twitter" style="padding-left:0px;" class="fa fa-twitter-square "/>&#160;<span t-field="company.twitter"/>
+                      <span t-if="company.facebook" style="padding-left:13px;" class="fa fa-facebook-square "/>&#160;<span t-field="company.facebook"/>
+                      <span t-if="company.googleplus" style="padding-left:13px;" class="fa fa-google-plus-square "/>&#160;<span t-field="company.googleplus" />
+                       </div>
+                       </div>
+                       <div class="col-xs-5 mb8 pull-right" style="padding-bottom:2px;padding-right:0px;">
+                         <div class="pull-right" style="width:auto;padding-left:15px;">
+				<t t-call="professional_templates.company_address"/>
+			 </div>
+                       </div>
+                   </t>
+                </div> <!--end of Header-->
+		<!-- START OF PAGE -->
+               <div class="article page" t-attf-style="color:{{style.text_color}} !important;font-size:{{style.body_font}}px !important;font-family:{{style.font_family}} !important;">
+<div class="col-xs-12" t-attf-style="white-space:pre-line;color:#{style.wm_color};left:#{style.leftpadding}mm; top:#{style.toppadding}mm;font-size:#{style.fontsize}px; opacity:#{style.opacity};z-index:-99; -webkit-transform:rotate(-#{style.rotate}deg);position:fixed;"><t t-esc="style.wm_eval(o, time, user, res_company)"/></div>
+                 <div class="col-xs-12" style="padding-left:0px; padding-right:0px;"><!--start of wrapper -->
+		      <div class="col-xs-6 pull-left" style="padding-left:0px; padding-right:0px;">
+                           <div  t-attf-style="background-color:{{style.theme_color}}; width:auto; float:left; padding-top:2px; padding-bottom:2px; 
+					color:{{style.theme_txt_color}};">
+                               <span t-attf-style="font-size:{{style.body_font+6}}px; padding-left:5px; padding-right:5px;"><span class="fa fa-building "/>&#160;Customer Address</span>
+                           </div>
+		      </div>
+		      <div class="col-xs-6 pull-right" style="padding-left:0px; padding-right:0px;">
+                           <div  t-attf-style="background-color:{{style.theme_color}}; width:auto; float:right; padding-top:2px; padding-bottom:2px; 
+			     color:{{style.theme_txt_color}};">
+					<span t-attf-style="font-size:{{style.body_font+6}}px; padding-left:5px; padding-right:5px;"><span class="fa fa-truck "/> 
+					<span>Delivery Address</span></span>
+  		           </div>
+                      </div>
+                 </div> <!--end of wrapper-->
+                 <div class="col-xs-12" style="padding-left:0px; padding-right:0px;"><!--start of wrapper -->
+                   <div class="col-xs-6 pull-left" style="padding-left:8px; padding-right:0px;">
+                            <div t-if="o.partner_id" t-attf-style="font-size:{{style.body_font+6}}px;color:{{style.cust_color}}; margin-top:5px; margin-bottom:5px; margin-left:0px;"> 
+                              <t t-if="o.partner_id.parent_id">
+                                <span t-field="o.partner_id.parent_id"/>, <span t-if="o.partner_id.title" t-field="o.partner_id.title"/> <span t-field="o.partner_id.name"/>
+                              </t>
+                              <t t-if="not o.partner_id.parent_id">
+                                <span t-if="o.partner_id.title" t-field="o.partner_id.title"/> <span t-field="o.partner_id"/>
+                              </t>
+
+			    </div>
+                            <address t-field="o.move_lines[0].partner_id" style="margin-bottom:0px;" 
+                                  t-field-options='{"widget": "contact", "fields": ["address", "phone",  "email", "website"], "no_marker": false}'/>
+                                  <span t-if="o.move_lines[0].partner_id.vat">VAT: <span t-field="o.move_lines[0].partner_id.vat"/></span>
+                   </div>
+		   <div class="col-xs-6 pull-right text-right" style="padding-left:0px; padding-right:8px;">
+                            <div t-if="o.move_lines and o.move_lines[0].partner_id and o.move_lines[0].partner_id.id != o.partner_id.id">
+                                <div>
+                                    <address t-field="o.move_lines[0].partner_id" style="margin-bottom:0px;"
+                                        t-field-options='{"widget": "contact", "fields": ["address", "name", "phone",  "email", "website"]}'/>
+                                </div>
+                            </div>
+                            <div t-if="(o.move_lines and o.move_lines[0].partner_id and o.move_lines[0].partner_id.id == o.partner_id.id) or 
+				o.move_lines and not o.move_lines[0].partner_id">
+                                <div t-field="o.partner_id" style="margin-bottom:0px;"
+                                   t-field-options='{"widget": "contact", "fields": ["address", "name", "phone",  "email", "website"]}'/>
+                            </div>
+
+                   </div>
+                 </div> <!--end of wrapper-->
+                   <div class="col-xs-8 pull-right" t-attf-style="background-color:{{style.theme_color}}; color:{{style.theme_txt_color}};">
+                          <h3 style="margin-top:10px;">
+  		                <span>Delivery Note </span>
+                		<span t-field="o.name"/>
+                           </h3>
+                        <t t-set="div_style" t-value="'padding-left:8px;font-size:{}px;padding-right:8px; width:auto;float:left; margin-right:15px;'.format(style.body_font+2)"></t>
+			   <div t-if="o.picking_type_id" t-attf-style="{{div_style}}">
+                   		 <strong style="white-space:nowrap;">Order (origin):</strong>
+                    		<p t-field="o.picking_type_id"/>
+                	   </div>
+			   <div id="div_sched_date" t-if="o.scheduled_date" t-attf-style="{{div_style}}">
+                   		 <strong style="white-space:nowrap;">Scheduled Date:</strong>
+                    		<p t-field="o.scheduled_date"/>
+                	   </div>
+                   </div>
+		   <div  class="col-xs-12" style="padding:8px;"></div>
+                <!-- DATA-->
+                <t t-call="professional_templates.delivery_lines"/>
+                <!--/DATA-->
+               </div><!--End of PAGE-->
+                <!--FOOTER -->
+               <div class="footer" t-attf-style="font-size:{{style.footer_font}}px !important;font-family:{{style.font_family}} !important;">
+                <t t-call="professional_templates.company_footer"/>
+	       </div>
+                <!--/FOOTER-->
+    </template>
+</data>
+</openerp>

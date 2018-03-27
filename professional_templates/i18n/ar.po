@@ -1,0 +1,5550 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* professional_templates
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-12 04:20+0000\n"
+"PO-Revision-Date: 2017-10-12 04:20+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.view_report_style_form
+msgid "#545454"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.category_template
+#: model:ir.ui.view,arch_db:professional_templates.company_footer_old
+msgid "&amp;bull;"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,opacity:0
+msgid "0.05"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,opacity:0
+msgid "0.1"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,opacity:0
+msgid "0.15"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,opacity:0
+msgid "0.2"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,opacity:0
+msgid "0.25"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,opacity:0
+msgid "0.3"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,opacity:0
+msgid "0.35"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,opacity:0
+msgid "0.4"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,opacity:0
+msgid "0.45"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,opacity:0
+msgid "0.5"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,opacity:0
+msgid "0.55"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,opacity:0
+msgid "0.6"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,opacity:0
+msgid "0.65"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,opacity:0
+msgid "0.7"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,opacity:0
+msgid "0.75"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,opacity:0
+msgid "0.8"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,opacity:0
+msgid "0.85"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,opacity:0
+msgid "0.9"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,opacity:0
+msgid "0.95"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,opacity:0
+msgid "1.0"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "10"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "100"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "100°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "101"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "101°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "102"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "102°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "103"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "103°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "104"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "104°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "105"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "105°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "106"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "106°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "107"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "107°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "108"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "108°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "109"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "109°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "10°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "11"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "110"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "110°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "111"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "111°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "112"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "112°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "113"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "113°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "114"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "114°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "115"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "115°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "116"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "116°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "117"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "117°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "118"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "118°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "119"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "119°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "11°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "12"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "120"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "120°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "121"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "121°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "122"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "122°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "123"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "123°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "124"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "124°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "125"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "125°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "126"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "126°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "127"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "127°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "128"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "128°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "129"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "129°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "12°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "13"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "130"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "130°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "131"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "131°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "132"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "132°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "133"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "133°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "134"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "134°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "135"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "135°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "136"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "136°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "137"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "137°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "138"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "138°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "139"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "139°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "13°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "14"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "140"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "140°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "141"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "141°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "142"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "142°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "143"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "143°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "144"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "144°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "145"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "145°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "146"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "146°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "147"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "147°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "148"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "148°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "149"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "149°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "14°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "15"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "150"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "150°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "151"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "151°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "152"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "152°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "153"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "153°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "154"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "154°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "155"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "155°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "156"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "156°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "157"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "157°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "158"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "158°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "159"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "159°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "15°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "16"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "160°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "161°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "162°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "163°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "164°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "165°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "166°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "167°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "168°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "169°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "16°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "17"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "170°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "171°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "172°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "173°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "174°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "175°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "176°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "177°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "178°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "179°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "17°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "18"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "180°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "181°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "182°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "183°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "184°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "185°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "186°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "187°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "188°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "189°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "18°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "19"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "190°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "191°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "192°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "193°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "194°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "195°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "196°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "197°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "198°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "199°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "19°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "20"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "200°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "201°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "202°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "203°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "204°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "205°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "206°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "207°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "208°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "209°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "20°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "21"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "210°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "211°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "212°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "213°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "214°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "215°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "216°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "217°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "218°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "219°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "21°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "22"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "220°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "221°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "222°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "223°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "224°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "225°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "226°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "227°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "228°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "229°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "22°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "23"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "230°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "231°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "232°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "233°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "234°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "235°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "236°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "237°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "238°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "239°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "23°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "24"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "240°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "241°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "242°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "243°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "244°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "245°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "246°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "247°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "248°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "249°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "24°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "25"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "250°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "251°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "252°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "253°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "254°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "255°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "256°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "257°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "258°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "259°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "25°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "26"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "260°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "261°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "262°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "263°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "264°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "265°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "266°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "267°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "268°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "269°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "26°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "27"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "270°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "271°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "272°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "273°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "274°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "275°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "276°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "277°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "278°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "279°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "27°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "28"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "280°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "281°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "282°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "283°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "284°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "285°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "286°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "287°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "288°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "289°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "28°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "29"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "290°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "291°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "292°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "293°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "294°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "295°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "296°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "297°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "298°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "299°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "29°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "30"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "300°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "301°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "302°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "303°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "304°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "305°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "306°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "307°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "308°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "309°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "30°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "31"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "310°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "311°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "312°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "313°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "314°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "315°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "316°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "317°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "318°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "319°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "31°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "32"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "320°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "321°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "322°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "323°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "324°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "325°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "326°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "327°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "328°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "329°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "32°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "33"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "330°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "331°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "332°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "333°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "334°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "335°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "336°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "337°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "338°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "339°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "33°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "34"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "340°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "341°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "342°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "343°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "344°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "345°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "346°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "347°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "348°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "349°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "34°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "35"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "350°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "351°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "352°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "353°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "354°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "355°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "356°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "357°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "358°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "359°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "35°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "36"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "360°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "36°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "37"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "37°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "38"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "38°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "39"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "39°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "40"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "40°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "41"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "41°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "42"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "42°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "43"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "43°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "44"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "44°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "45"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "45°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "46"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "46°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "47"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "47°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "48"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "48°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "49"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "49°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,body_font:0
+#: selection:report.template.settings,fontsize:0
+#: selection:report.template.settings,footer_font:0
+#: selection:report.template.settings,header_font:0
+msgid "50"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "50°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "51"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "51°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "52"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "52°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "53"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "53°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "54"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "54°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "55"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "55°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "56"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "56°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "57"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "57°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "58"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "58°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "59"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "59°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "60"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "60°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "61"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "61°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "62"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "62°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "63"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "63°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "64"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "64°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "65"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "65°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "66"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.realcom_invoice_footer
+msgid "6601 Locarno"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "66°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "67"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "67°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "68"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "68°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "69"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "69°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "70"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "70°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "71"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "71°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "72"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "72°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "73"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "73°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "74"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "74°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "75"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "75°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "76"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "76°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "77"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "77°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "78"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "78°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "79"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "79°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "80"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "80°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "81"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "81°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "82"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "82°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "83"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "83°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "84"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "84°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "85"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "85°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "86"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "86°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "87"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "87°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "88"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "88°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "89"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "89°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "90"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "90°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "91"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "91°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "92"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "92°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "93"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "93°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "94"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "94°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "95"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "95°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "96"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "96°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "97"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "97°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "98"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "98°"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,fontsize:0
+msgid "99"
+msgstr ""
+
+#. module: professional_templates
+#: selection:report.template.settings,rotate:0
+msgid "99°"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.act_report_xml_view
+msgid "<code colspan=\"2\" attrs=\"{'invisible': [('pdf_watermark', '=', False), ('pdf_last_page', '=', False)]}\">\n"
+"                        NOTE: Watermark and Last Pages PDF uploaded here will override the one uploaded at company level in the general settings menu.\n"
+"                    </code>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.picking_lines
+msgid "<i class=\"fa fa-barcode\"/> Barcode"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+msgid "<i class=\"fa fa-calendar\"/> Date"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.purchase_lines
+msgid "<i class=\"fa fa-calendar\"/> Date Req."
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.rfq_lines
+msgid "<i class=\"fa fa-calendar\"/> Expected Date"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.delivery_lines
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+#: model:ir.ui.view,arch_db:professional_templates.order_lines
+#: model:ir.ui.view,arch_db:professional_templates.picking_lines
+msgid "<i class=\"fa fa-camera\"/> Image"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.company_footer
+msgid "<i class=\"fa fa-certificate\" aria-hidden=\"true\"/> VAT:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+msgid "<i class=\"fa fa-credit-card\"/> Method"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+msgid "<i class=\"fa fa-fw fa-asterisk\"/> Not Issued"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+msgid "<i class=\"fa fa-fw fa-asterisk\"/> Pro-Forma"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+msgid "<i class=\"fa fa-fw fa-ban\"/> Cancelled"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+msgid "<i class=\"fa fa-fw fa-check\"/> Fully Paid"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+msgid "<i class=\"fa fa-fw fa-check\"/> Fully Refunded"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+msgid "<i class=\"fa fa-fw fa-check\"/> No Charge"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+msgid "<i class=\"fa fa-fw fa-clock-o\"/>Overdue"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+msgid "<i class=\"fa fa-fw fa-times\"/> Not Refunded"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+msgid "<i class=\"fa fa-fw fa-times\"/> Unpaid"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+msgid "<i class=\"fa fa-fw fa-times-circle-o\"/> Partially Paid"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+msgid "<i class=\"fa fa-fw fa-times-circle-o\"/> Partially Refunded"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines_no_layout
+msgid "<i class=\"fa fa-list-ol\"/> Image"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.delivery_lines
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines_no_layout
+#: model:ir.ui.view,arch_db:professional_templates.order_lines
+#: model:ir.ui.view,arch_db:professional_templates.picking_lines
+#: model:ir.ui.view,arch_db:professional_templates.purchase_lines
+#: model:ir.ui.view,arch_db:professional_templates.rfq_lines
+msgid "<i class=\"fa fa-list-ol\"/> Item"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines_no_layout
+#: model:ir.ui.view,arch_db:professional_templates.order_lines
+msgid "<i class=\"fa fa-minus-square\"/> Discount(%)"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines_no_layout
+msgid "<i class=\"fa fa-money\"/> Amount"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.order_lines
+#: model:ir.ui.view,arch_db:professional_templates.purchase_lines
+msgid "<i class=\"fa fa-money\"/> Price"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.delivery_lines
+msgid "<i class=\"fa fa-pencil\"/> Ordered Quantity"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.delivery_lines
+msgid "<i class=\"fa fa-pencil\"/>Ordered Quantity"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+msgid "<i class=\"fa fa-pencil-square\"/> Ref."
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines_no_layout
+#: model:ir.ui.view,arch_db:professional_templates.order_lines
+#: model:ir.ui.view,arch_db:professional_templates.purchase_lines
+msgid "<i class=\"fa fa-pencil-square\"/> Taxes"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines_no_layout
+#: model:ir.ui.view,arch_db:professional_templates.order_lines
+#: model:ir.ui.view,arch_db:professional_templates.picking_lines
+#: model:ir.ui.view,arch_db:professional_templates.purchase_lines
+#: model:ir.ui.view,arch_db:professional_templates.rfq_lines
+msgid "<i class=\"fa fa-sort-amount-asc\"/> Quantity"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.delivery_lines
+msgid "<i class=\"fa fa-tag\"/> Lot/Serial No."
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.picking_lines
+msgid "<i class=\"fa fa-tag\"/> Serial No."
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines_no_layout
+#: model:ir.ui.view,arch_db:professional_templates.order_lines
+#: model:ir.ui.view,arch_db:professional_templates.purchase_lines
+msgid "<i class=\"fa fa-tags\"/> Unit Price"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines_no_layout
+#: model:ir.ui.view,arch_db:professional_templates.order_lines
+#: model:ir.ui.view,arch_db:professional_templates.purchase_lines
+#: model:ir.ui.view,arch_db:professional_templates.rfq_lines
+msgid "<i class=\"fa fa-th-large\"/> Description"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.delivery_lines
+#: model:ir.ui.view,arch_db:professional_templates.picking_lines
+msgid "<i class=\"fa fa-th-large\"/> Product"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.delivery_lines
+msgid "<i class=\"fa fa-truck\"/> Delivered Quantity"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.picking_lines
+msgid "<i class=\"fa fa-truck\"/> Destination"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.picking_lines
+msgid "<i class=\"fa fa-truck\"/> Source"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_1_document
+msgid "<span class=\"fa fa-building \"/> Customer Address"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_1_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_1_document
+msgid "<span class=\"fa fa-building \"/> Vendor Address"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_3_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_3_document
+msgid "<span class=\"fa fa-building\"/> Vendor Address:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_4_document
+msgid "<span class=\"fa fa-building\"/> Warehouse Address:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_1_document
+msgid "<span class=\"fa fa-file-text \"/>\n"
+"					 Invoicing &amp; <span class=\"fa fa-truck \"/> Shipping Address"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_1_document
+msgid "<span class=\"fa fa-file-text \"/>\n"
+"		           		 Invoicing Address"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_4_document
+msgid "<span class=\"fa fa-file-text\"/> Invoicing &amp; <span class=\"fa fa-truck\"/> Shipping Address:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_4_document
+msgid "<span class=\"fa fa-file-text\"/> Invoicing Address:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_7_document
+msgid "<span class=\"fa fa-star\" aria-hidden=\"true\"/>  \n"
+"                    <span>DELIVERY NOTE </span>\n"
+"                    <span class=\"fa fa-star\" aria-hidden=\"true\"/>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_7_document
+msgid "<span class=\"fa fa-star\" aria-hidden=\"true\"/>  \n"
+"                    <span>PICKING SLIP </span>\n"
+"                    <span class=\"fa fa-star\" aria-hidden=\"true\"/>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_7_document
+msgid "<span class=\"fa fa-star\" aria-hidden=\"true\"/>  \n"
+"                    <span>R.F.Q # </span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_1_document
+msgid "<span class=\"fa fa-truck \"/> \n"
+"					<span>Delivery Address</span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_1_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_1_document
+msgid "<span class=\"fa fa-truck \"/> \n"
+"					<span>Shipping Address</span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_2_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_3_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_4_document
+msgid "<span class=\"fa fa-truck \"/> Shipping Address:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_4_document
+msgid "<span class=\"fa fa-truck\"/> Delivery Address:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_4_document
+msgid "<span class=\"fa fa-truck\"/> Delivery address:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_3_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_4_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_3_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_4_document
+msgid "<span class=\"fa fa-truck\"/> Shipping Address:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_4_document
+msgid "<span class=\"fa fa-truck\"/> Shipping address:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_1_document
+msgid "<span class=\"fa fa-user \"/> Invoicing Address"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_2_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_4_document
+msgid "<span class=\"fa fa-user \"/> Invoicing Address:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_3_document
+msgid "<span class=\"fa fa-user \"/> Invoicing Adrress:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_1_document
+msgid "<span class=\"fa fa-user \"/> Invoicing  &amp;  <span class=\"fa fa-truck \"/> Shipping Address"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_2_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_3_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_4_document
+msgid "<span class=\"fa fa-user \"/> Invoicing  &amp;  <span class=\"fa fa-truck \"/> Shipping Address:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.view_report_style_form
+msgid "<span class=\"label label-info orders_label_text_align\"><span class=\"fa fa-info-circle\"/> NOTE</span> \n"
+"                                    <code>Install the font first.</code>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.view_report_style_form
+msgid "<span class=\"label label-info orders_label_text_align\"><span class=\"fa fa-info-circle\"/> NOTE</span> \n"
+"                                    To upload your watermark design in PDF format for each report, go to <code>Settings <span class=\"fa fa-long-arrow-right\"/> Technical <span class=\"fa fa-long-arrow-right\"/> Actions <span class=\"fa fa-long-arrow-right\"/> Reports </code> and search for <code>professional_templates</code> then open each of the report and proceed to <code>Advanced Properties</code> where you can upload your PDF. The PDF will form the background of your report as shown in example below."
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_4_document
+msgid "<span style=\"font-weight:bold;\">Date: </span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_1_document
+msgid "<span style=\"padding-left:5px; padding-right:5px;\"><span class=\"fa fa-truck \"/> Shipping Address</span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_10_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_8_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_9_document
+msgid "<span style=\"white-space:nowrap;\">DELIVERY NOTE</span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_8_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_9_document
+msgid "<span style=\"white-space:nowrap;\">PICKING SLIP</span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_10_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_8_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_9_document
+msgid "<span style=\"white-space:nowrap;\">R.F.Q</span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_1_document
+msgid "<span>\n"
+"						<span class=\"fa fa-building \"/> Warehouse Address\n"
+"					     </span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_1_document
+msgid "<span>\n"
+"						<span class=\"fa fa-truck \"/> Delivery Address\n"
+"					     </span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_13_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_13_document
+msgid "<span>\n"
+"                        <span class=\"fa fa-truck \"/> Ship To:\n"
+"                    </span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_13_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_13_document
+msgid "<span><span class=\"fa fa-file-text-o\"/> Invoice To:</span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_1_document
+msgid "<span><span class=\"fa fa-truck \"/> Shipping Address</span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_duplicate
+msgid "<span>DUPLICATE</span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_2_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_3_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_4_document
+msgid "<span>Delivery Note  </span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_1_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_6_document
+msgid "<span>Delivery Note </span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_0_duplicate
+msgid "<span>Duplicate </span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_13_duplicate
+msgid "<span>Duplicate No: </span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_1_duplicate
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_2_duplicate
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_3_duplicate
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_4_duplicate
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_duplicate
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_duplicate
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_duplicate
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_duplicate
+msgid "<span>Duplicate# </span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.picking_lines
+msgid "<span>No reservation or quantity done yet.</span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_4_document
+msgid "<span>Picking  </span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_1_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_3_document
+msgid "<span>Picking </span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_6_document
+msgid "<span>Picking Slip </span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_4_document
+msgid "<span>R.F.Q  </span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_11_document
+msgid "<span>R.F.Q # </span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_3_document
+msgid "<span>Request For Quotation  </span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_6_document
+msgid "<span>Request For Quotation </span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_2_document
+msgid "<span>Request for Quotation  </span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_1_document
+msgid "<span>Request for Quotation #</span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.purchase_lines
+#: model:ir.ui.view,arch_db:professional_templates.rfq_lines
+msgid "<span>Shipping:</span>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_9_document
+msgid "<strong style=\"white-space:nowrap;\">Carrier: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_10_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_6_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_7_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_8_document
+msgid "<strong style=\"white-space:nowrap;\">Carrier:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_9_document
+msgid "<strong style=\"white-space:nowrap;\">Client Ref: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_7_document
+msgid "<strong style=\"white-space:nowrap;\">Client Ref:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_13_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_1_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_3_document
+msgid "<strong style=\"white-space:nowrap;\">Client Reference:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_8_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_9_document
+msgid "<strong style=\"white-space:nowrap;\">Commitment Date: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_1_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_6_document
+msgid "<strong style=\"white-space:nowrap;\">Commitment Date:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_9_document
+msgid "<strong style=\"white-space:nowrap;\">Delivery Note #: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_10_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_6_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_7_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_8_document
+msgid "<strong style=\"white-space:nowrap;\">Delivery Note #</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+msgid "<strong style=\"white-space:nowrap;\">Due Date: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_0_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_13_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_1_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_2_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_3_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_4_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+msgid "<strong style=\"white-space:nowrap;\">Due Date:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_13_document
+msgid "<strong style=\"white-space:nowrap;\">Expiry Date:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_9_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_9_document
+msgid "<strong style=\"white-space:nowrap;\">Fiscal Position: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_0_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_13_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_1_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_2_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_3_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_4_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_1_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_3_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_4_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_8_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_13_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_1_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_3_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_8_document
+msgid "<strong style=\"white-space:nowrap;\">Fiscal Position:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+msgid "<strong style=\"white-space:nowrap;\">Invoice Date: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_0_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_13_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_1_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_2_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_3_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_4_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+msgid "<strong style=\"white-space:nowrap;\">Invoice Date:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_2_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_3_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_4_document
+msgid "<strong style=\"white-space:nowrap;\">Order (Origin):</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_1_document
+msgid "<strong style=\"white-space:nowrap;\">Order (origin):</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_9_document
+msgid "<strong style=\"white-space:nowrap;\">Order Date: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_1_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_3_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_4_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_8_document
+msgid "<strong style=\"white-space:nowrap;\">Order Date:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_9_document
+msgid "<strong style=\"white-space:nowrap;\">Origin: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_10_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_6_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_7_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_8_document
+msgid "<strong style=\"white-space:nowrap;\">Origin:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_9_document
+msgid "<strong style=\"white-space:nowrap;\">Our Reference: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_1_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_3_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_4_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_8_document
+msgid "<strong style=\"white-space:nowrap;\">Our Reference:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_8_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_9_document
+msgid "<strong style=\"white-space:nowrap;\">Picking Slip # </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_6_document
+msgid "<strong style=\"white-space:nowrap;\">Picking Slip #</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+msgid "<strong style=\"white-space:nowrap;\">Reference: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_0_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_13_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_1_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_2_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_3_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_4_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_8_document
+msgid "<strong style=\"white-space:nowrap;\">Reference:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_9_document
+msgid "<strong style=\"white-space:nowrap;\">Salesperson: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_13_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_13_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_1_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_3_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_8_document
+msgid "<strong style=\"white-space:nowrap;\">Salesperson:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_9_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_8_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_9_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_9_document
+msgid "<strong style=\"white-space:nowrap;\">Scheduled Date: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_10_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_1_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_3_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_6_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_7_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_8_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_1_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_6_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_1_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_3_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_4_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_8_document
+msgid "<strong style=\"white-space:nowrap;\">Scheduled Date:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_2_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_4_document
+msgid "<strong style=\"white-space:nowrap;\">Scheduled Date</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_1_document
+msgid "<strong style=\"white-space:nowrap;\">Source Doc.:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_0_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_13_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_1_document
+msgid "<strong style=\"white-space:nowrap;\">Source Doc:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_9_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_8_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_9_document
+msgid "<strong style=\"white-space:nowrap;\">Source Document: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_10_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_6_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_7_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_8_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_2_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_3_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_4_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_6_document
+msgid "<strong style=\"white-space:nowrap;\">Source Document:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_8_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_9_document
+msgid "<strong style=\"white-space:nowrap;\">Status: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_1_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_6_document
+msgid "<strong style=\"white-space:nowrap;\">Status:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_9_document
+msgid "<strong style=\"white-space:nowrap;\">Valid Until: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_1_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_3_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_8_document
+msgid "<strong style=\"white-space:nowrap;\">Valid Until:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_9_document
+msgid "<strong style=\"white-space:nowrap;\">Weight: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_10_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_6_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_7_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_8_document
+msgid "<strong style=\"white-space:nowrap;\">Weight:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_9_document
+msgid "<strong style=\"white-space:nowrap;\">Your Reference: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_1_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_3_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_4_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_8_document
+msgid "<strong style=\"white-space:nowrap;\">Your Reference:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.order_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_order_lines
+msgid "<strong>Amount in Words: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+#: model:ir.ui.view,arch_db:professional_templates.purchase_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_lines
+msgid "<strong>Amount in Words:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+msgid "<strong>Balance</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.realcom_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_order_lines
+msgid "<strong>Bank Details </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.report_dn1_document2
+#: model:ir.ui.view,arch_db:professional_templates.report_dn2_document2
+#: model:ir.ui.view,arch_db:professional_templates.report_dn3_document2
+#: model:ir.ui.view,arch_db:professional_templates.report_dn4_document2
+#: model:ir.ui.view,arch_db:professional_templates.report_pk1_document2
+#: model:ir.ui.view,arch_db:professional_templates.report_pk2_document2
+#: model:ir.ui.view,arch_db:professional_templates.report_pk3_document2
+#: model:ir.ui.view,arch_db:professional_templates.report_pk4_document2
+msgid "<strong>Carrier:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_4_document
+msgid "<strong>Client Reference:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_3_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_4_document
+msgid "<strong>Commitment Date:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_4_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_4_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_4_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_4_document
+msgid "<strong>Date:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.picking_lines
+msgid "<strong>Driver Instructions:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_12_duplicate
+msgid "<strong>Duplicate </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_11_duplicate
+msgid "<strong>Duplicate</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+#: model:ir.ui.view,arch_db:professional_templates.order_lines
+#: model:ir.ui.view,arch_db:professional_templates.purchase_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_order_lines
+#: model:ir.ui.view,arch_db:professional_templates.rfq_lines
+msgid "<strong>Fiscal Position Remark:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_4_document
+msgid "<strong>Fiscal Position:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.view_report_style_form
+msgid "<strong>Footer Logo</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.view_report_style_form
+msgid "<strong>Main Logo</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_lines
+msgid "<strong>Note:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_1_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_3_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_4_document
+msgid "<strong>Order (origin):</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.realcom_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_order_lines
+msgid "<strong>Payment Terms: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_4_document
+msgid "<strong>Salesperson:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_3_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_4_document
+msgid "<strong>Scheduled Date:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_lines
+msgid "<strong>Shipping Terms:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.order_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_order_lines
+msgid "<strong>Shipping:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_3_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_4_document
+msgid "<strong>Source Doc.:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_3_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_4_document
+msgid "<strong>Status:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+msgid "<strong>Status</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_lines
+#: model:ir.ui.view,arch_db:professional_templates.subtotal_template
+msgid "<strong>Subtotal: </strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_lines
+msgid "<strong>Subtotal</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+#: model:ir.ui.view,arch_db:professional_templates.order_lines
+#: model:ir.ui.view,arch_db:professional_templates.purchase_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_order_lines
+msgid "<strong>Taxes</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.order_lines
+#: model:ir.ui.view,arch_db:professional_templates.purchase_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_order_lines
+msgid "<strong>Total Without Taxes</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+#: model:ir.ui.view,arch_db:professional_templates.order_lines
+#: model:ir.ui.view,arch_db:professional_templates.purchase_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_order_lines
+msgid "<strong>Total</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.realcom_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_order_lines
+msgid "<strong>VAT:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_4_document
+msgid "<strong>Valid Until:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.report_dn1_document2
+#: model:ir.ui.view,arch_db:professional_templates.report_dn2_document2
+#: model:ir.ui.view,arch_db:professional_templates.report_dn3_document2
+#: model:ir.ui.view,arch_db:professional_templates.report_dn4_document2
+#: model:ir.ui.view,arch_db:professional_templates.report_pk1_document2
+#: model:ir.ui.view,arch_db:professional_templates.report_pk2_document2
+#: model:ir.ui.view,arch_db:professional_templates.report_pk3_document2
+#: model:ir.ui.view,arch_db:professional_templates.report_pk4_document2
+msgid "<strong>Weight:</strong>"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.delivery_lines
+msgid "All items couldn't be shipped, the remaining ones will be shipped as soon as they become available."
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_account_invoice_amount_words
+#: model:ir.model.fields,field_description:professional_templates.field_purchase_order_amount_words
+#: model:ir.model.fields,field_description:professional_templates.field_sale_order_amount_words
+msgid "Amount in Words:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_transparent
+msgid "Background transparent"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.realcom_invoice_footer
+msgid "Banca Raiffeisen Locarno"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_11_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_11_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_8_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_9_document
+msgid "Bill To:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_11_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_11_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_8_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_9_document
+msgid "Bill &amp; Ship To:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_body_font
+msgid "Body Font(px):"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+msgid "CANCELLED INVOICE"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.realcom_invoice_footer
+msgid "CH74 8037 9000 0027 7579 8"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_0_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_12_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_13_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_1_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_2_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_3_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_4_document
+msgid "Cancelled Invoice"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+msgid "Cancelled Invoice #"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_11_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+msgid "Cancelled Invoice #:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.realcom_invoice_footer
+msgid "Cancelled Invoice Date:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+msgid "Cancelled Invoice Total"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_11_document
+msgid "Carrier:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_show_footer_logo
+msgid "Check this box to display footer logo in the reports"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_show_img
+msgid "Check this box to display product image in Sales Order, Quotation, Invoice and Delivery Note"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_footer
+msgid "Check this box to enable footer in your reports. You may want to disable footer if you are using a watermark PDF with a footer content already"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_header
+msgid "Check this box to enable header in your reports. You may want to disable header if you are using a watermark PDF with a header content already"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_aiw_report
+msgid "Check this box to enable the display of amount in words in the invoice/quote/sale order reports"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_transparent
+msgid "Check this box to have a transparent background for your reports. This is useful when the watermark feature is enabled so that your watermark is not hidden behind the report content/text"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_11_document
+msgid "Client Ref:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_11_document
+msgid "Commitment Date:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model,name:professional_templates.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_name_color
+msgid "Company Name Color"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.res_config_professional_report_templates
+msgid "Company specific settings for printed reports"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model,name:professional_templates.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_create_date
+msgid "Created on"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model,name:professional_templates.model_res_currency
+msgid "Currency"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_res_currency_currency_name
+msgid "Currency Name"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_res_currency_currency_name
+msgid "Currency full name e.g US Dollars"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_3_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_1_document
+msgid "Customer Address"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_10_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_11_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_2_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_6_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_7_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_8_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_9_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_11_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_3_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_4_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_6_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_8_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_9_document
+msgid "Customer Address:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_cust_color
+msgid "Customer Name Color"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+msgid "DRAFT INVOICE"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_12_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_12_document
+msgid "Date"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_1_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_3_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_4_document
+msgid "Date Ordered:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_res_company_default_style
+#: model:ir.model.fields,field_description:professional_templates.field_res_config_settings_default_style
+msgid "Default Style"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_3_document
+msgid "Delivery Address"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_11_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_3_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_6_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_8_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_9_document
+msgid "Delivery Address:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_res_partner_delivery_instructions
+#: model:ir.model.fields,field_description:professional_templates.field_res_users_delivery_instructions
+msgid "Delivery Instructions"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.ke_res_partner_inherit1
+msgid "Delivery Instructions..."
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_11_document
+msgid "Delivery Note #:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_stock_picking_dn_style
+msgid "Delivery Note Style"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_template_dn
+msgid "Delivery Note Template"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.realcom_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_order_lines
+msgid "Description"
+msgstr ""
+
+#. module: professional_templates
+#: code:addons/professional_templates/models/invoice.py:65
+#: code:addons/professional_templates/models/purchase_order.py:56
+#: code:addons/professional_templates/models/sale_order.py:25
+#, python-format
+msgid "Disabled"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.realcom_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_order_lines
+msgid "Discount(%)"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_show_img
+msgid "Display product image"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_leftpadding
+msgid "Distance from left (mm)"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_toppadding
+msgid "Distance from top (mm)"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_12_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_12_document
+msgid "Document No."
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_11_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+msgid "Draft"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_0_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_12_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_13_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_1_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_2_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_3_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_4_document
+msgid "Draft Invoice"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+msgid "Draft Invoice #"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_11_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+msgid "Draft Invoice #:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.realcom_invoice_footer
+msgid "Draft Invoice Date:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+msgid "Draft Invoice Total"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_11_document
+msgid "Due Date:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_aiw_report
+msgid "Enable amount in words"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_footer
+msgid "Enable footer"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_show_footer_logo
+msgid "Enable footer logo"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_header
+msgid "Enable header"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_even
+msgid "Even parity Color"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_res_company_facebook
+msgid "Facebook ID"
+msgstr ""
+
+#. module: professional_templates
+#: code:addons/professional_templates/models/report.py:85
+#, python-format
+msgid "Failed to load the non PDF watermark..."
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_11_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_11_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_11_document
+msgid "Fiscal Position:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_font_family
+msgid "Font Family:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_footer_font
+msgid "Footer Font(px):"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_footer_logo
+msgid "Footer Logo"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_9_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_9_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_9_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_11_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_9_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_9_document
+msgid "From:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_name
+msgid "Give a unique name for this report style"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_res_company_googleplus
+msgid "Google-Plus ID"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_header_font
+msgid "Header Font(px):"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_logo
+msgid "Header Logo"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_res_company_pdf_last_page
+#: model:ir.model.fields,help:professional_templates.field_res_config_settings_pdf_last_page
+msgid "Here you can upload a PDF document that contain some specific content such as product brochure,\n"
+" promotional content, advert, sale terms and Conditions,..etc.\n"
+" This document will be appended to the printed report"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_ir_act_report_xml_pdf_last_page
+msgid "Here you can upload a PDF document that contain some specific content such as product brochure,\n"
+" promotional content, advert, sale terms and Conditions,..etc.\n"
+"This document will be appended to the printed report. \n"
+"Last pages PDF uploaded here will override the one uploaded at company level in the general settings."
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_id
+msgid "ID"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+msgid "INVOICE"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+msgid "INVOICE REFUND"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_res_company_default_style
+#: model:ir.model.fields,help:professional_templates.field_res_config_settings_default_style
+msgid "If no other report style is specified during the printing of document, this default style will be used"
+msgstr ""
+
+#. module: professional_templates
+#: code:addons/professional_templates/models/report_settings.py:161
+#, python-format
+msgid "Invalid python expression defined for watermark: "
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model,name:professional_templates.model_account_invoice
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_12_document
+msgid "Invoice"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+msgid "Invoice #"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_11_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+msgid "Invoice #:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_11_document
+#: model:ir.ui.view,arch_db:professional_templates.realcom_invoice_footer
+msgid "Invoice Date:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_4_document
+msgid "Invoice No."
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_13_document
+msgid "Invoice No:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_account_invoice_style
+msgid "Invoice Style"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_template_inv
+msgid "Invoice Template"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+msgid "Invoice Total"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_0_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_1_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_2_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_3_document
+msgid "Invoice#"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_3_document
+msgid "Invoicing &amp; Shipping Address:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_3_document
+msgid "Invoicing Address:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings___last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_ir_act_report_xml_pdf_last_page_fname
+#: model:ir.model.fields,field_description:professional_templates.field_res_company_pdf_last_page_fname
+#: model:ir.model.fields,field_description:professional_templates.field_res_config_settings_pdf_last_page_fname
+msgid "Last Pages Filename"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_ir_act_report_xml_pdf_last_page
+#: model:ir.model.fields,field_description:professional_templates.field_res_company_pdf_last_page
+#: model:ir.model.fields,field_description:professional_templates.field_res_config_settings_pdf_last_page
+msgid "Last Pages PDF"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_name
+msgid "Name of Style"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.view_report_style_form
+msgid "Name of style.."
+msgstr ""
+
+#. module: professional_templates
+#: code:addons/professional_templates/models/report.py:88
+#, python-format
+msgid "No usable watermark found, got "
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.realcom_invoice_footer
+msgid "Number:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_8_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_9_document
+msgid "ORDER"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_odd
+msgid "Odd parity Color"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_opacity
+msgid "Opacity (0.05-1.0):"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_12_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_3_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_4_document
+msgid "Order"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_8_document
+msgid "Order #"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_11_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_9_document
+msgid "Order #:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_11_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_11_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_13_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_8_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_9_document
+msgid "Order Date:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_13_document
+msgid "Order No:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_6_document
+msgid "Order Total"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_template_so
+msgid "Order/Quote Template"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_11_document
+msgid "Origin:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_11_document
+msgid "Our Reference:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_9_document
+msgid "P.O"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_purchase_order_po_style
+msgid "PO Style"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_0_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_12_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_1_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_2_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_3_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_4_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+msgid "PRO-FORMA"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.realcom_invoice_footer
+msgid "PRO-FORMA Date:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+msgid "PRO-FORMA INVOICE"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+msgid "PRO-FORMA Invoice #"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_11_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+msgid "PRO-FORMA Invoice #:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_13_document
+msgid "PRO-FORMA No:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+msgid "PRO-FORMA Total"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_8_document
+msgid "PURCHASE ORDER"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.company_footer
+#: model:ir.ui.view,arch_db:professional_templates.company_footer_old
+msgid "Page:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+msgid "Payments:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_11_document
+msgid "Picking Slip #:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_template_pk
+msgid "Picking Slip Template"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_stock_picking_pk_style
+msgid "Picking Style"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.res_config_professional_report_templates
+msgid "Professional Report Templates"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model,name:professional_templates.model_purchase_order
+#: model:ir.ui.view,arch_db:professional_templates.PO_1_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_3_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_4_document
+msgid "Purchase Order"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_8_document
+msgid "Purchase Order #"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_11_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_9_document
+msgid "Purchase Order #:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_template_po
+msgid "Purchase Order Template"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_6_document
+msgid "Purchase Order Total"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_watermark
+msgid "Put a python expression/code which when evaluated, will result in some text to be printed on PDF as watermark."
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_8_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_9_document
+msgid "QUOTATION"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.realcom_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_order_lines
+msgid "Quantity"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model,name:professional_templates.model_sale_order
+#: model:ir.ui.view,arch_db:professional_templates.SO_12_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_1_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_3_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_4_document
+msgid "Quotation"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_8_document
+msgid "Quotation #"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_11_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_9_document
+msgid "Quotation #:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_11_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_13_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_1_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_3_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_4_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_8_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_9_document
+msgid "Quotation Date:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_13_document
+msgid "Quotation No:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_6_document
+msgid "Quotation Total"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_sale_order_style
+msgid "Quote/Order Style"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_4_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_9_document
+msgid "R.F.Q"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+msgid "REFUND"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_7_document
+msgid "REQUEST FOR QUOTATION"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_8_document
+msgid "RFQ"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_8_document
+msgid "RFQ #"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_11_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_9_document
+msgid "RFQ #:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_purchase_order_rfq_style
+msgid "RFQ Style"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_template_rfq
+msgid "RFQ Template"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_6_document
+msgid "RFQ Total"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_11_document
+msgid "Reference:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_0_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_12_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_1_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_2_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_3_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_4_document
+msgid "Refund"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+msgid "Refund #"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_11_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+msgid "Refund #:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.realcom_invoice_footer
+msgid "Refund Date:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_13_document
+msgid "Refund No:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+msgid "Refund Total"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.invoice_lines
+msgid "Refunds:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model,name:professional_templates.model_report_template_settings
+msgid "Report Style Settings"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.menu,name:professional_templates.reports_styles_menuitem
+#: model:ir.ui.view,arch_db:professional_templates.view_report_style_form
+#: model:ir.ui.view,arch_db:professional_templates.view_report_style_tree
+msgid "Report Styles"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_res_partner_style
+#: model:ir.model.fields,field_description:professional_templates.field_res_users_style
+msgid "Reports Style"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.actions.act_window,name:professional_templates.reports_styles_action
+msgid "Reports Styles"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_1_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_3_document
+msgid "Request for Quotation"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_rotate
+msgid "Rotates the watermark text a given number of degrees counter clockwise around its centre"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+msgid "SUPPLIER INVOICE"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+msgid "SUPPLIER REFUND"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_1_document
+msgid "Sale Order"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_11_document
+msgid "Salesperson:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_11_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_11_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_11_document
+msgid "Scheduled Date:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_purchase_order_po_style
+msgid "Select Style to use when printing the PO"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_sale_order_style
+msgid "Select Style to use when printing the Sales Order or Quote"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_stock_picking_pk_style
+msgid "Select Style to use when printing the picking slip"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_account_invoice_style
+msgid "Select Style to use when printing this invoice"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_res_partner_style
+#: model:ir.model.fields,help:professional_templates.field_res_users_style
+msgid "Select a style to use when printing reports for this customer"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_stock_picking_dn_style
+msgid "Select style to use when printing the Delivery Note"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_purchase_order_rfq_style
+msgid "Select style to use when printing the RFQ"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_opacity
+msgid "Sets the opacity of the watermark text. Give a number between 0.05 and 1.0 with 1.0 being opaque and 0.05 being almost transparent"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.view_report_style_form
+msgid "Settings"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_11_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_11_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_8_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_9_document
+msgid "Ship To:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_11_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_8_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_9_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_10_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_11_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_2_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_6_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_7_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_8_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_9_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_3_document
+msgid "Shipping Address:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_11_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_11_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_11_document
+msgid "Source Document:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_11_document
+msgid "Status:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.res_config_professional_report_templates
+msgid "Style"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.view_report_style_form
+msgid "Style Settings"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_0_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_12_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_1_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_2_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_3_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_4_document
+msgid "Supplier Invoice"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+msgid "Supplier Invoice #"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_11_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+msgid "Supplier Invoice #:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.realcom_invoice_footer
+msgid "Supplier Invoice Date:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_13_document
+msgid "Supplier Invoice No:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+msgid "Supplier Invoice Total"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_0_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_12_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_1_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_2_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_3_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_4_document
+msgid "Supplier Refund"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+msgid "Supplier Refund #"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_11_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+msgid "Supplier Refund #:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.realcom_invoice_footer
+msgid "Supplier Refund Date:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_13_document
+msgid "Supplier Refund No:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+msgid "Supplier Refund Total"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_text_color
+msgid "Text Color"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_rotate
+msgid "Text Rotation (0°-360°):"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_leftpadding
+msgid "Text to start at 'x' distance from left margin of the PDF body"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_toppadding
+msgid "Text to start at 'y' distance from top margin of the PDF body"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_7_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_7_document
+msgid "Thank You."
+msgstr ""
+
+#. module: professional_templates
+#: code:addons/professional_templates/models/report.py:111
+#, python-format
+msgid "The Last Page PDF document has security restrictions. Can not read or decrypt it!: "
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_theme_color
+msgid "The Main Theme color of the invoice. Normally this                     should be one of your official company colors"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_name_color
+msgid "The Text color of the Company Name. Normally this                     should be one of your official company colors or default HTML text color"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_cust_color
+msgid "The Text color of the Customer Name. Normally this                     should be one of your official company colors or default HTML text color"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_theme_txt_color
+msgid "The Text color of the areas bearing the theme color. Normally this should NOT be the same color as the                            theme color. Otherwise the text will not be visible"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_text_color
+msgid "The Text color of the invoice. Normally this                     should be one of your official company colors or default HTML text color"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_even
+msgid "The background color for Even invoice lines in the invoice"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_odd
+msgid "The background color for Odd invoice lines in the invoice"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_fontsize
+msgid "The font-size of the watermark text to be printed on PDF body"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_account_invoice_amount_words
+msgid "The invoice total amount in words is automatically generated by the system..few languages are supported currently"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_account_invoice_project_title
+#: model:ir.model.fields,help:professional_templates.field_sale_order_project_title
+msgid "The title of your customer project or work you are doing for your customer"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_purchase_order_amount_words
+#: model:ir.model.fields,help:professional_templates.field_sale_order_amount_words
+msgid "The total amount in words is automatically generated by the system..few languages are supported currently"
+msgstr ""
+
+#. module: professional_templates
+#: code:addons/professional_templates/models/report.py:69
+#, python-format
+msgid "The uploaded watermark PDF document has security restrictions. Can not read or decrypt it!: "
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_wm_color
+msgid "The watermark text color"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_theme_color
+msgid "Theme Color"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_theme_txt_color
+msgid "Theme Text Color"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_footer_logo
+msgid "This field holds the image used as footer logo for the reports, if non is uploaded and footer logo is enabled then the company logo will be used"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_report_template_settings_logo
+msgid "This field holds the image used as logo for the reports, if non is uploaded, the company logo will be used"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.delivery_lines
+msgid "This shipment is a backorder of"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_account_invoice_project_title
+#: model:ir.model.fields,field_description:professional_templates.field_sale_order_project_title
+msgid "Title"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.realcom_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_order_lines
+msgid "Total"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model,name:professional_templates.model_stock_picking
+msgid "Transfer"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_res_company_twitter
+msgid "Twitter Handle"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.realcom_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_order_lines
+msgid "U.M"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.category_template
+msgid "Uncategorized"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.realcom_lines
+#: model:ir.ui.view,arch_db:professional_templates.realcom_order_lines
+msgid "Unit Price"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_ir_act_report_xml_pdf_watermark
+msgid "Upload a watermark PDF to be used as the background of each page printed.\n"
+" Watermark uploaded here will override the one uploaded at company level in the general settings."
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,help:professional_templates.field_res_company_pdf_watermark
+#: model:ir.model.fields,help:professional_templates.field_res_config_settings_pdf_watermark
+msgid "Upload your company letterhead PDF or a PDF to form the background of your reports.\n"
+" This PDF will be used as the background of each an every page printed."
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_1_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_2_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_3_document
+#: model:ir.ui.view,arch_db:professional_templates.DN_4_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_10_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_11_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_13_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_1_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_2_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_3_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_4_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_6_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_7_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_8_document
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_9_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_11_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_1_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_3_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_4_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_6_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_8_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_9_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_11_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_1_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_3_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_4_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_8_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_9_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_10_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_11_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_1_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_2_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_3_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_4_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_6_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_7_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_8_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_9_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_11_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_13_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_1_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_3_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_4_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_8_document
+#: model:ir.ui.view,arch_db:professional_templates.SO_9_document
+#: model:ir.ui.view,arch_db:professional_templates.company_address
+#: model:ir.ui.view,arch_db:professional_templates.company_address_noname
+msgid "VAT:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_11_document
+msgid "Valid Until:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_1_document
+msgid "Vendor Address"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_11_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_3_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_4_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_6_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_8_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_9_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_11_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_6_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_8_document
+#: model:ir.ui.view,arch_db:professional_templates.PO_9_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_10_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_11_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_2_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_6_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_7_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_8_document
+#: model:ir.ui.view,arch_db:professional_templates.RFQ_9_document
+msgid "Vendor Address:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_1_document
+msgid "Warehouse Address"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PICK_10_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_11_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_2_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_3_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_4_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_6_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_7_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_8_document
+#: model:ir.ui.view,arch_db:professional_templates.PICK_9_document
+msgid "Warehouse Address:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_ir_act_report_xml_pdf_watermark_fname
+#: model:ir.model.fields,field_description:professional_templates.field_res_company_pdf_watermark_fname
+#: model:ir.model.fields,field_description:professional_templates.field_res_config_settings_pdf_watermark_fname
+msgid "Watermark Filename"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_ir_act_report_xml_pdf_watermark
+#: model:ir.model.fields,field_description:professional_templates.field_res_company_pdf_watermark
+#: model:ir.model.fields,field_description:professional_templates.field_res_config_settings_pdf_watermark
+msgid "Watermark PDF"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_watermark
+msgid "Watermark Python Expression"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.view_report_style_form
+msgid "Watermark Settings"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_wm_color
+msgid "Watermark color (Hex)"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model.fields,field_description:professional_templates.field_report_template_settings_fontsize
+msgid "Watermark font-size (px):"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.INVOICE_12_document
+msgid "We invoice for the previous deliveries and / or services the following positions:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.SO_12_document
+msgid "We quote for the following items and / or services:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.DN_11_document
+msgid "Weight:"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.picking_lines
+msgid "You do not have any products reserved for this picking.  Please click the 'Reserve' button\n"
+"                        to check if products are available."
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.ui.view,arch_db:professional_templates.PO_11_document
+msgid "Your Reference:"
+msgstr ""
+
+#. module: professional_templates
+#: code:addons/professional_templates/models/report.py:96
+#, python-format
+msgid "Your watermark pdf contains more than one page. Only the first page will be used!"
+msgstr ""
+
+#. module: professional_templates
+#: code:addons/professional_templates/models/report.py:92
+#, python-format
+msgid "Your watermark pdf does not contain any page or is not a standard PDF document. No watermark will be applied!"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model,name:professional_templates.model_ir_actions_report
+msgid "ir.actions.report"
+msgstr ""
+
+#. module: professional_templates
+#: model:ir.model,name:professional_templates.model_res_config_settings
+msgid "res.config.settings"
+msgstr ""
+

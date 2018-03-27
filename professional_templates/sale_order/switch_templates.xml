@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+<template id="sale_order">
+    <t t-call="web.report_layout">
+        <t t-foreach="docs" t-as="doc">
+            <t t-set="style" t-value="doc.style or res_company.default_style or user.env.ref('professional_templates.default_style_for_all_reports')"/>
+            <t t-if="style.template_so.key == 'professional_templates.SO_1_document'" t-call="professional_templates.SO_1_document" t-lang="doc.partner_id.lang"/>
+            <t t-if="style.template_so.key == 'professional_templates.SO_2_document'" t-call="professional_templates.SO_2_document" t-lang="doc.partner_id.lang"/>
+            <t t-if="style.template_so.key == 'professional_templates.SO_3_document'" t-call="professional_templates.SO_3_document" t-lang="doc.partner_id.lang"/>
+            <t t-if="style.template_so.key == 'professional_templates.SO_4_document'" t-call="professional_templates.SO_4_document" t-lang="doc.partner_id.lang"/>
+            <t t-if="style.template_so.key == 'professional_templates.SO_5_document'" t-call="professional_templates.SO_5_document" t-lang="doc.partner_id.lang"/>
+            <t t-if="style.template_so.key == 'professional_templates.SO_6_document'" t-call="professional_templates.SO_6_document" t-lang="doc.partner_id.lang"/>
+            <t t-if="style.template_so.key == 'professional_templates.SO_7_document'" t-call="professional_templates.SO_7_document" t-lang="doc.partner_id.lang"/>
+            <t t-if="style.template_so.key == 'professional_templates.SO_8_document'" t-call="professional_templates.SO_8_document" t-lang="doc.partner_id.lang"/>
+            <t t-if="style.template_so.key == 'professional_templates.SO_9_document'" t-call="professional_templates.SO_9_document" t-lang="doc.partner_id.lang"/>
+            <t t-if="style.template_so.key == 'professional_templates.SO_10_document'" t-call="professional_templates.SO_10_document" t-lang="doc.partner_id.lang"/>
+            <t t-if="style.template_so.key == 'professional_templates.SO_11_document'" t-call="professional_templates.SO_11_document" t-lang="doc.partner_id.lang"/>
+            <t t-if="style.template_so.key == 'professional_templates.SO_12_document'" t-call="professional_templates.SO_12_document" t-lang="doc.partner_id.lang"/>
+            <t t-if="style.template_so.key == 'professional_templates.SO_13_document'" t-call="professional_templates.SO_13_document" t-lang="doc.partner_id.lang"/>
+            <t t-if="not style" t-call="sale.report_saleorder_document" t-lang="doc.partner_id.lang"/>
+         </t>
+    </t>
+</template>
+</data>
+</openerp>

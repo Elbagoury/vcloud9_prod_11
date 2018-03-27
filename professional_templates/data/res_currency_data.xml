@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <!-- Currencies -->
+        <record id="base.USD" model="res.currency">
+            <field name="currency_name">US Dollars</field>
+        </record>
+
+        <record id="base.CAD" model="res.currency">
+            <field name="currency_name">Canadian Dollars</field>
+        </record>
+
+        <record id="base.CHF" model="res.currency">
+            <field name="currency_name">Swiss Francs</field>
+        </record>
+
+        <record id="base.KES" model="res.currency">
+            <field name="currency_name">Kenya Shillings</field>
+        </record>
+
+        <record id="base.GBP" model="res.currency">
+            <field name="currency_name">British Pounds</field>
+        </record>
+
+        <record id="base.EUR" model="res.currency">
+            <field name="currency_name">Euros</field>
+        </record>
+
+        <record id="base.XOF" model="res.currency">
+            <field name="currency_name">West African CFA francs</field>
+        </record>
+        <record id="base.INR" model="res.currency">
+            <field name="currency_name">Indian Rupee</field>
+        </record>
+        <record id="base.NOK" model="res.currency">
+            <field name="currency_name">Norwegian Krone</field>
+        </record>
+        <record id="base.PLN" model="res.currency">
+            <field name="currency_name">Polish zloty</field>
+        </record>
+        <record id="base.RUB" model="res.currency">
+            <field name="currency_name">Russian Rubles</field>
+        </record>
+        <record id="base.DKK" model="res.currency">
+            <field name="currency_name">Danish Krone</field>
+        </record>
+        <record id="base.BRL" model="res.currency">
+            <field name="currency_name">Brazilian real</field>
+        </record>
+    </data>
+</openerp>

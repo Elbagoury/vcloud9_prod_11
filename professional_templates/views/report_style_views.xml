@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id='reports_styles_action' model='ir.actions.act_window'>
+        <field name="name">Reports Styles</field>
+        <field name="res_model">report.template.settings</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem
+        id="reports_styles_menuitem"
+        name="Report Styles"
+        parent="base.reporting_menuitem"
+        action="reports_styles_action"
+        sequence="10"
+        groups="base.group_no_one"
+    />
+
+    <record id="view_report_style_tree" model="ir.ui.view">
+        <field name="name">view.report.style.tree</field>
+        <field name="model">report.template.settings</field>
+        <field name="arch" type="xml">
+            <tree string="Report Styles">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_report_style_form" model="ir.ui.view">
+        <field name="name">view.report.style.form</field>
+        <field name="model">report.template.settings</field>
+        <field name="arch" type="xml">
+            <form string="Report Styles">
+                <sheet>
+                    <div class="text-center pull-right ml8" style="display:inline-grid" 
+                        attrs="{'invisible': ['|',('show_footer_logo', '=', False),('footer', '=', False)], 'required': [('show_footer_logo', '=', True)]}">
+                        <strong>Footer Logo</strong>
+                        <field name="footer_logo" class="oe_avatar"  widget="image"/>
+                    </div>
+                    <div class="text-center pull-right mr8" style="display:inline-grid">
+                        <strong>Main Logo</strong>
+                        <field name="logo" class="oe_avatar"  widget="image" />
+                    </div>
+                    <div>
+                        <h1>
+                            <label for="name" class="oe_edit_only"/>
+                            <field name="name" placeholder="Name of style.."/>
+                        </h1>
+                    </div>
+                    <notebook>
+                        <page string="Style Settings">
+                            <group string="Settings" style="white-space:nowrap;">
+                            <group>
+                                <field name="header"/>
+                                <field name="footer"/>
+                                <field name="show_footer_logo" attrs="{'invisible': [('footer', '=', False)]}"/>
+                                <field name="name_color"/>
+                                <field name="cust_color"/>
+                                <field name="theme_color"/>
+                                <field name="theme_txt_color"/>
+                                <field name="text_color"/>
+                                <field name="odd"/>
+                                <field name="even"/>
+                                <field name="font_family"/>
+                                <div class="text-muted" style="white-space:normal;">
+                                    <span class="label label-info orders_label_text_align"><span class="fa fa-info-circle"/> NOTE</span> 
+                                    <code>Install the font first.</code>
+                                </div>
+                            </group>
+                            <group>
+                                <field name="header_font"/>
+                                <field name="body_font"/>
+                                <field name="footer_font"/>
+                                <field name="template_so"/>
+                                <field name="template_inv"/>
+                                <field name="template_pk"/>
+                                <field name="template_dn"/>
+                                <field name="template_po"/>
+                                <field name="template_rfq"/>
+                                <field name="aiw_report"/>
+                                <field name="show_img"/>
+                                <field name="transparent"/>
+                            </group>
+                            </group>
+                        </page>
+                        <page string="Watermark Settings">
+                            <group col="4" style="white-space:nowrap;" >
+                                <field name="leftpadding"/>
+                                <field name="toppadding"/>
+                                <field name="wm_color" placeholder="#545454"/>
+                                <field name="rotate"/>
+                                <field name="fontsize"/>
+                                <field name="opacity"/>
+                            </group>
+                                <label for="watermark"/>
+                                <pre><field name="watermark"/></pre>
+                                <div class="text-muted mt16" style="white-space:normal;" attrs="{'invisible': [('show_footer_logo', '=', False)], 'required': [('show_footer_logo', '=', True)]}">
+                                    <span class="label label-info orders_label_text_align"><span class="fa fa-info-circle"/> NOTE</span> 
+                                    To upload your watermark design in PDF format for each report, go to <code>Settings <span class="fa fa-long-arrow-right"/> Technical <span class="fa fa-long-arrow-right"/> Actions <span class="fa fa-long-arrow-right"/> Reports </code> and search for <code>professional_templates</code> then open each of the report and proceed to <code>Advanced Properties</code> where you can upload your PDF. The PDF will form the background of your report as shown in example below.
+                                </div>
+                                <div class="text-center mt16">
+                                    <img style="display:inline-block;" width="50%" src="/professional_templates/static/description/wm.png"/>
+                                 </div>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

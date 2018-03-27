@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+<template id="report_picking">
+    <t t-call="web.report_layout">
+       <t t-foreach="docs" t-as="o">
+          <t t-set="style" t-value="o.pk_style or res_company.default_style or user.env.ref('professional_templates.default_style_for_all_reports')"/>
+	  <t t-if="style.template_pk.key == 'professional_templates.PICK_1_document'" t-call="professional_templates.PICK_1_document" lang="o.partner_id.lang"/>
+	  <t t-if="style.template_pk.key == 'professional_templates.PICK_2_document'" t-call="professional_templates.PICK_2_document" lang="o.partner_id.lang"/>
+	  <t t-if="style.template_pk.key == 'professional_templates.PICK_3_document'" t-call="professional_templates.PICK_3_document" lang="o.partner_id.lang"/>
+	  <t t-if="style.template_pk.key == 'professional_templates.PICK_4_document'" t-call="professional_templates.PICK_4_document" lang="o.partner_id.lang"/>
+	  <t t-if="style.template_pk.key == 'professional_templates.PICK_5_document'" t-call="professional_templates.PICK_5_document" lang="o.partner_id.lang"/>
+	  <t t-if="style.template_pk.key == 'professional_templates.PICK_6_document'" t-call="professional_templates.PICK_6_document" lang="o.partner_id.lang"/>
+	  <t t-if="style.template_pk.key == 'professional_templates.PICK_7_document'" t-call="professional_templates.PICK_7_document" lang="o.partner_id.lang"/>
+	  <t t-if="style.template_pk.key == 'professional_templates.PICK_8_document'" t-call="professional_templates.PICK_8_document" lang="o.partner_id.lang"/>
+	  <t t-if="style.template_pk.key == 'professional_templates.PICK_9_document'" t-call="professional_templates.PICK_9_document" lang="o.partner_id.lang"/>
+	  <t t-if="style.template_pk.key == 'professional_templates.PICK_10_document'" t-call="professional_templates.PICK_10_document" lang="o.partner_id.lang"/>
+	  <t t-if="style.template_pk.key == 'professional_templates.PICK_11_document'" t-call="professional_templates.PICK_11_document" lang="o.partner_id.lang"/>
+	  <t t-if="not style" t-call="stock.report_picking" lang="o.partner_id.lang"/>
+       </t>
+    </t>
+</template>
+</data>
+</openerp>

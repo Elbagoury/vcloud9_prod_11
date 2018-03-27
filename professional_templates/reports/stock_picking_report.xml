@@ -1,0 +1,14 @@
+<openerp>
+    <data>
+
+        <report
+            string="Picking Operations"
+            id="stock.action_report_picking"
+            model="stock.picking"
+            report_type="qweb-pdf"
+            name="professional_templates.report_picking"
+            file="professional_templates.report_picking_operations"
+        />
+
+    </data>
+</openerp>

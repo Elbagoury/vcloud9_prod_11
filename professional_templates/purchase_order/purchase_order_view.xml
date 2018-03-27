@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="purchase_order_inherited_customized" model="ir.ui.view">
+            <field name="name">PO CUSTOMIZED</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+		 <xpath expr="//field[@name='date_order']" position="after">
+                     <field name="po_style" attrs="{'invisible': [('state', 'not in', ['purchase', 'done', 'to approve', 'cancel'])]}"/>
+		 </xpath>
+                <xpath expr="//field[@name='notes']" position="before">
+                    <group>
+                        <field name="amount_words"/>
+                    </group>
+                </xpath>
+	    </field>
+	</record>
+<record id="purchase.report_purchaseorder_document" model="ir.ui.view">
+  <field name="name">Odoo Template</field>
+</record>
+    </data>
+</openerp>
+

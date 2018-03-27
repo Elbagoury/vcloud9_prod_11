@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+<template id="purchase_order">
+    <t t-call="web.report_layout">
+         <t t-foreach="docs" t-as="o">
+            <t t-set="style" t-value="o.po_style or res_company.default_style or user.env.ref('professional_templates.default_style_for_all_reports')"/>
+            <t t-if="style.template_po.key == 'professional_templates.PO_1_document'" t-call="professional_templates.PO_1_document" t-lang="o.partner_id.lang"/>
+            <t t-if="style.template_po.key == 'professional_templates.PO_2_document'" t-call="professional_templates.PO_2_document" t-lang="o.partner_id.lang"/>
+            <t t-if="style.template_po.key == 'professional_templates.PO_3_document'" t-call="professional_templates.PO_3_document" t-lang="o.partner_id.lang"/>
+            <t t-if="style.template_po.key == 'professional_templates.PO_4_document'" t-call="professional_templates.PO_4_document" t-lang="o.partner_id.lang"/>
+            <t t-if="style.template_po.key == 'professional_templates.PO_5_document'" t-call="professional_templates.PO_5_document" t-lang="o.partner_id.lang"/>
+            <t t-if="style.template_po.key == 'professional_templates.PO_6_document'" t-call="professional_templates.PO_6_document" t-lang="o.partner_id.lang"/>
+            <t t-if="style.template_po.key == 'professional_templates.PO_7_document'" t-call="professional_templates.PO_7_document" t-lang="o.partner_id.lang"/>
+            <t t-if="style.template_po.key == 'professional_templates.PO_8_document'" t-call="professional_templates.PO_8_document" t-lang="o.partner_id.lang"/>
+            <t t-if="style.template_po.key == 'professional_templates.PO_9_document'" t-call="professional_templates.PO_9_document" t-lang="o.partner_id.lang"/>
+            <t t-if="style.template_po.key == 'professional_templates.PO_10_document'" t-call="professional_templates.PO_10_document" t-lang="o.partner_id.lang"/>
+            <t t-if="style.template_po.key == 'professional_templates.PO_11_document'" t-call="professional_templates.PO_11_document" t-lang="o.partner_id.lang"/>
+            <t t-if="not style" t-call="purchase.report_purchaseorder_document" t-lang="o.partner_id.lang"/>
+         </t>
+    </t>
+</template>
+</data>
+</openerp>

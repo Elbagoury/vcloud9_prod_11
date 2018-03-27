@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <template id="RFQ_11_document" name="Clean Template">
+        <!-- Multicompany -->
+        <t t-if="o and 'company_id' in o">
+            <t t-set="company" t-value="o.company_id"></t>
+        </t>
+        <t t-if="not o or not 'company_id' in o">
+            <t t-set="company" t-value="res_company"></t>
+        </t>
+        <div class="header col-xs-12 text-center" t-attf-style="text-align:-webkit-center;padding-bottom:0px; padding-left:0px; padding-right:0px; color:{{style.text_color}} !important;font-size:{{style.header_font}}px !important;font-family:{{style.font_family}} !important;">
+            <t t-if="style.header">
+            <div style="padding-right:0px;">
+                <span t-if="style.logo">
+                    <span itemprop="image" t-field="style.logo" t-field-options='{"widget": "image", "style": "float:none;"}'/>
+                </span>
+                <span t-if="not style.logo and company.logo">
+                    <span itemprop="image" t-field="company.logo" t-field-options='{"widget": "image", "style": "float:none;"}'/>
+                </span>
+                <span t-if="not style.logo and not company.logo">
+                    <span itemprop="image" t-field="company.logo" t-field-options='{"widget": "image", "style": "float:none;"}'/>
+                </span>
+                <div t-if="company.twitter or company.facebook or company.facebook" t-attf-style="background-color:{{style.theme_color}}; width:auto; float:none; padding-left:15px; color:{{style.theme_txt_color}}; padding-right:15px; padding-top:4px; padding-bottom:2px; margin-right:15px; white-space:nowrap;display: inline-block;" class="mb8">
+                    <span t-if="company.twitter" style="padding-left:0px;" class="fa fa-twitter-square "/>&#160;<span t-field="company.twitter"/>
+                    <span t-if="company.facebook" style="padding-left:13px;" class="fa fa-facebook-square "/>&#160;<span t-field="company.facebook"/>
+                    <span t-if="company.googleplus" style="padding-left:13px;" class="fa fa-google-plus-square "/>&#160;<span t-field="company.googleplus" />
+                </div>
+            </div>
+        </t>
+        </div> <!--end of Header-->
+		<!-- START OF PAGE -->
+                <div class="article page" t-attf-style="color:{{style.text_color}} !important;font-size:{{style.body_font}}px !important;font-family:{{style.font_family}} !important;">
+<div class="col-xs-12" t-attf-style="white-space:pre-line;color:#{style.wm_color};left:#{style.leftpadding}mm; top:#{style.toppadding}mm;font-size:#{style.fontsize}px; opacity:#{style.opacity};z-index:-99; -webkit-transform:rotate(-#{style.rotate}deg);position:fixed;"><t t-esc="style.wm_eval(o, time, user, res_company)"/></div>
+                    <h3 class="text-center">
+                        <span>R.F.Q # </span>
+                        <span t-field="o.name"/>
+                    </h3>
+                    <t t-set="div_class" t-value="'col-xs-4'"></t>
+                    <div t-attf-class="#{div_class} mb8">
+                        <span t-attf-style="font-size:{{style.body_font+6}}px;font-weight:bold;">From:</span>
+                        <div style="width:auto;">
+                            <t t-call="professional_templates.company_address"/>
+                        </div>
+                    </div>
+                    <div t-attf-class="#{div_class} text-center">
+                        <span  t-attf-style="font-size:{{style.body_font+6}}px; font-weight:bold;">Vendor Address:</span>
+                        <div t-if="o.partner_id" t-attf-style="color:{{style.cust_color}};font-size:{{style.body_font+6}}px;font-weight:500;"> 
+                            <t t-if="o.partner_id.parent_id">
+                                <span t-field="o.partner_id.parent_id"/>, <span t-if="o.partner_id.title" t-field="o.partner_id.title"/> <span t-field="o.partner_id.name"/>
+                                </t>
+                                <t t-if="not o.partner_id.parent_id">
+                                <span t-if="o.partner_id.title" t-field="o.partner_id.title"/> <span t-field="o.partner_id"/>
+                            </t>
+                        </div>
+                        <address t-field="o.partner_id" style="margin-bottom:0px;" t-field-options='{"widget": "contact", "fields":["address","phone","email","website"],"no_marker": false}'/>
+                        <span t-if="o.partner_id.vat">VAT: <span t-field="o.partner_id.vat"/></span>
+                    </div>
+                    <div t-attf-class="#{div_class} text-right">
+                        <span t-attf-style="font-size:{{style.body_font+6}}px;font-weight:bold;">Shipping Address:</span>
+                        <address t-if="o.dest_address_id" t-field="o.dest_address_id" style="margin-bottom:0px;" 
+                            t-field-options='{"widget": "contact", "fields":["name", "address","phone","email","website"],"no_marker": false}'/>
+                        <address t-if="not o.dest_address_id and o.picking_type_id and o.picking_type_id.warehouse_id" t-field="o.picking_type_id.warehouse_id.partner_id" style="margin-bottom:0px;" 
+                            t-field-options='{"widget": "contact", "fields":["name", "address","phone","email","website"],"no_marker": false}'/>
+                    </div>
+                <!-- DATA-->
+                <t t-call="professional_templates.rfq_lines"/>
+                <!--/DATA-->
+               </div><!--End of PAGE-->
+                <!--FOOTER -->
+            <div class="footer" t-attf-style="font-size:{{style.footer_font}}px !important;font-family:{{style.font_family}} !important;">
+                <t t-call="professional_templates.company_footer"/>
+            </div>
+                <!--/FOOTER-->
+    </template>
+
+</data>
+</openerp>

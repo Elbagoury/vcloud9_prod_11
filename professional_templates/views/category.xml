@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+<template id="category_template">
+    <!-- Category name -->
+    <tr  t-attf-style="color:{{style.text_color}};background-color:{{'transparent' if style.transparent else '#f5f5f5'}};">
+            <td t-attf-colspan="{{cols}}" t-attf-style="font-weight: bold; border-bottom: 1px solid {{style.text_color}};">&amp;bull;
+                <t t-if="layout_category['name']">
+                    <t t-esc="layout_category['name']"></t>
+                </t>
+                <t t-if="not layout_category['name']">
+                    Uncategorized
+                </t>
+            </td>
+        </tr>
+</template>
+<template id="subtotal_template">
+    <!-- Subtotal -->
+        <t t-set="subtotal" t-value="sum(line.price_subtotal for line in layout_category['lines'])"/>
+        <tr class="text-right" t-attf-style="color:{{style.text_color}}">
+            <td t-attf-colspan="{{cols}}">
+                <strong>Subtotal: </strong>
+                 <span t-esc="subtotal" t-options="{'widget': 'monetary', 'display_currency': doc.pricelist_id.currency_id}"/>
+            </td>
+        </tr>
+</template>
+<template id="separator_template">
+</template>
+
+</data>
+</openerp>
+                    

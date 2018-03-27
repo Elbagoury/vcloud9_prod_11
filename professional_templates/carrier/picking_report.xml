@@ -1,0 +1,61 @@
+<odoo>
+    <template id="report_pk1_document2" inherit_id="professional_templates.PICK_1_document" name="Modern">
+        <xpath expr="//div[@id='div_sched_date']" position="after">
+                   <div t-if="o.picking_type_id.code == 'outgoing' and o.carrier_id" t-attf-style="{{div_style}}">
+                     <strong>Carrier:</strong>
+                     <p t-field="o.carrier_id"/>
+                   </div>
+
+                   <div t-attf-style="{{div_style}}">
+                     <strong>Weight:</strong>
+                     <p><span t-field="o.weight"/> <span t-field="o.weight_uom_id"/></p>
+                   </div>
+        </xpath>
+    </template>
+
+
+    <template id="report_pk2_document2" inherit_id="professional_templates.PICK_2_document" name="Classic">
+        <xpath expr="//div[@id='div_sched_date']" position="after">
+                   <div t-if="o.picking_type_id.code == 'outgoing' and o.carrier_id" t-attf-style="{{div_style}}">
+                     <strong>Carrier:</strong>
+                     <p t-field="o.carrier_id"/>
+                   </div>
+
+                   <div t-attf-style="{{div_style}}">
+                     <strong>Weight:</strong>
+                     <p><span t-field="o.weight"/> <span t-field="o.weight_uom_id"/></p>
+                   </div>
+        </xpath>
+    </template>
+
+
+    <template id="report_pk3_document2" inherit_id="professional_templates.PICK_3_document" name="Retro">
+        <xpath expr="//div[@id='div_sched_date']" position="after">
+                   <div t-if="o.picking_type_id.code == 'outgoing' and o.carrier_id" t-attf-style="{{div_style}}">
+                     <strong>Carrier:</strong>
+                     <p t-field="o.carrier_id"/>
+                   </div>
+
+                   <div t-attf-style="{{div_style}}">
+                     <strong>Weight:</strong>
+                     <p> <span t-field="o.weight"/> <span t-field="o.weight_uom_id"/></p>
+                   </div>
+        </xpath>
+    </template>
+
+
+    <template id="report_pk4_document2" inherit_id="professional_templates.PICK_4_document" name="TVA">
+        <xpath expr="//div[@id='div_sched_date']" position="after">
+                   <div t-if="o.picking_type_id.code == 'outgoing' and o.carrier_id" t-attf-style="{{div_style}}">
+                     <strong>Carrier:</strong>
+                     <p t-field="o.carrier_id"/>
+                   </div>
+
+                   <div t-attf-style="{{div_style}}">
+                     <strong>Weight:</strong>
+                     <p> <span t-field="o.weight"/> <span t-field="o.weight_uom_id"/></p>
+                   </div>
+        </xpath>
+    </template>
+</odoo>
+

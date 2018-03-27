@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+      <!-- If you dont enable Layouting , this will be used-->
+	<template id="invoice_lines_no_layout" inherit_id="professional_templates.invoice_lines">
+            <xpath expr="//t[contains(@t-as, 'page')]" position="after">
+                <table class="table  table-condensed" t-attf-style="color:{{style.text_color}};" groups="!sale.group_sale_layout">
+                    <thead t-attf-style="color:{{style.theme_txt_color if not style.transparent else style.text_color}};">
+                         <t t-set="th_style" t-value="'border-bottom: 1px solid #ddd !important;white-space:nowrap;'"></t>
+                        <tr t-attf-style="background-color:{{style.theme_color if not style.transparent else 'transparent'}};font-size:{{style.body_font+2}}px;">
+                            <th t-attf-style="{{th_style}}"><i class="fa fa-list-ol"/> Item</th>
+                            <th t-if="style.show_img" t-attf-style="{{th_style}}"><i class="fa fa-list-ol"/> Image</th>
+                            <th t-attf-style="{{th_style}}"><i class="fa fa-th-large"/> Description</th>
+                            <th class="text-right" t-attf-style="{{th_style}}"><i class="fa fa-sort-amount-asc"/> Quantity</th>
+                            <th class="text-right" t-attf-style="{{th_style}}"><i class="fa fa-tags"/> Unit Price</th>
+                            <th t-if="display_discount" class="text-right" t-attf-style="{{th_style}}" 
+                                            groups="sale.group_discount_per_so_line"><i class="fa fa-minus-square"/> Discount(%)</th>
+                            <th t-if="display_taxes" class="text-center" t-attf-style="{{th_style}}"><i class="fa fa-pencil-square"/> Taxes</th>
+                            <th class="text-right" t-attf-style="{{th_style}}"><i class="fa fa-money"/> Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                          <!-- Invoice line without layouts -->
+                        <t t-foreach="o.invoice_line_ids" t-as="l">
+                            <tr t-attf-style="background-color:{{style.odd if (l_parity in 'odd' and not style.transparent) else (not style.transparent and style.even)  or 'transparent'}};page-break-inside: avoid">
+                                <td><span t-esc="l_index + 1"/></td>
+                                <td t-if="style.show_img"><span t-if="l.sudo().product_id.image_small" itemprop="image" t-field="l.sudo().product_id.image_small" t-options='{"widget": "image"}'/></td>
+                                <td><span t-field="l.name"/></td>
+                                <td class="text-right">
+                                    <span t-field="l.quantity"/>
+                                    <span t-field="l.uom_id"  groups="product.group_uom"/>
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="l.price_unit"  t-options="{'widget': 'monetary', 'display_currency': o.currency_id}" />
+                                </td>
+                                <td t-if="display_discount" class="text-right" groups="sale.group_discount_per_so_line"><span t-esc="'{0:.2f}'.format(l.discount)"/></td>
+                                <td t-if="display_taxes" class="text-center">
+                                        <span t-esc="', '.join(map(lambda x: (x.description or x.name), l.invoice_line_tax_ids))"/>
+                                </td>
+                                <td class="text-right">
+                                        <span t-field="l.price_subtotal"/>
+
+                                </td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </xpath>
+	</template>
+</data>
+</openerp>
+                      

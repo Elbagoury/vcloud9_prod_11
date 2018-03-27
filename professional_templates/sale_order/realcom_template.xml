@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+<template id="SO_12_document" name="Realcom Template">
+ <!-- Multicompany -->
+                <t t-if="doc and 'company_id' in doc">
+                    <t t-set="company" t-value="doc.company_id"></t>
+                </t>
+                <t t-if="not doc or not 'company_id' in doc">
+                    <t t-set="company" t-value="res_company"></t>
+                </t>
+
+                <div t-attf-style="padding-bottom:0mm; padding-left:0mm; padding-right:0mm; color:{{style.text_color}} !important;font-size:{{style.header_font}}px !important;font-family:{{style.font_family}} !important;" class="header col-xs-12">
+                </div> <!--end of Header-->
+		<!-- START OF PAGE -->
+                <div class="article page" t-attf-style="background-color:transparent !important;color:{{style.text_color}} !important;font-size:{{style.body_font}}px !important;font-family:{{style.font_family}} !important;">
+<div class="col-xs-12" t-attf-style="white-space:pre-line;color:#{style.wm_color};left:#{style.leftpadding}mm; top:#{style.toppadding}mm;font-size:#{style.fontsize}px; opacity:#{style.opacity};z-index:-99; -webkit-transform:rotate(-#{style.rotate}deg);position:fixed;"><t t-esc="style.wm_eval(doc, time, user, res_company)"/></div>
+		
+                    <t t-set="div_style" t-value="'border-bottom:1px solid;color:{};font-size:{}px; padding-left:1mm; padding-right:4mm; width:100%;max-width:100%; float:left; margin-right:2.1mm;'.format(style.text_color,style.body_font+2)"></t>
+                    <t t-set="div_style1" t-value="'color:{};font-size:{}px; padding-left:1mm; padding-right:4mm; width:100%;max-width:100%; float:left; margin-right:2.1mm;'.format(style.text_color,style.body_font+2)"></t>
+                    <div class="col-xs-5 mt8 mb8" style="padding-left:0px;">
+                           <div id="invoice_title" t-attf-style="{{div_style}}">
+                                <strong  t-if="doc.state not in ['draft','sent']">Order</strong>
+                                <strong  t-if="doc.state in ['draft','sent']">Quotation</strong>
+                           </div>
+                           <div t-attf-style="{{div_style1}}">
+                               <p style="white-space:nowrap;"/>
+                           </div>
+                           <div t-if="doc.name" t-attf-style="{{div_style}}">
+                                <strong t-field="doc.name" />
+                           </div>
+                           <div t-if="doc.name" t-attf-style="{{div_style1}}">
+                               <p style="white-space:nowrap;">Document No.</p>
+                           </div>
+                           <div t-if="doc.date_order" t-attf-style="{{div_style}}">
+                                <strong t-field="doc.date_order" />
+                           </div>
+                           <div t-if="doc.date_order" t-attf-style="{{div_style1}}">
+                               <p style="white-space:nowrap;">Date</p>
+                           </div>
+                    </div>
+                    <div class="col-xs-7 pull-right mt8">
+                            <div t-if="doc.partner_id" t-attf-style="padding-left:40mm;color:{{style.cust_color}}; margin-top:1.3mm; margin-bottom:0mm; margin-left:0mm;font-size:{{style.body_font+2}}px;"> 
+			      <t t-if="doc.partner_id.parent_id">
+				<span t-field="doc.partner_id.parent_id"/>, <span t-if="doc.partner_id.title" t-field="doc.partner_id.title"/> <span t-field="doc.partner_id.name"/>
+			      </t>
+			      <t t-if="not doc.partner_id.parent_id">
+				<span t-if="doc.partner_id.title" t-field="doc.partner_id.title"/> <span t-field="doc.partner_id"/>
+			      </t>
+			    </div>
+			    <div style="white-space:nowrap;padding-left:40mm;">
+				<div>
+				   <span t-if="doc.partner_id.street" t-field="doc.partner_id.street"/>
+				</div>
+				<div>
+				   <span t-if="doc.partner_id.street2" t-field="doc.partner_id.street2"/>
+				</div>
+				<div>
+				   <span t-if="doc.partner_id.city" t-field="doc.partner_id.city"/><span t-if="doc.partner_id.city and doc.partner_id.zip">, </span>
+				   <span t-if="doc.partner_id.zip" t-field="doc.partner_id.zip"/>
+				</div>
+				<div>
+				   <span t-if="doc.partner_id.country_id" t-field="doc.partner_id.country_id"/>
+				</div>
+				
+			    </div>
+                   </div>
+                <div class="col-xs-12 row">
+                   <p>We quote for the following items and / or services:</p>
+                </div>
+                <!-- DATA-->
+                <t t-call="professional_templates.realcom_order_lines"/>
+                <!--/DATA-->
+               </div><!--End of PAGE-->
+                <!--FOOTER -->
+                <div class="footer" t-attf-style="font-size:{{style.footer_font}}px !important;font-family:{{style.font_family}} !important;">
+               </div>
+                <!--/FOOTER-->
+</template>
+
+</data>
+</openerp>

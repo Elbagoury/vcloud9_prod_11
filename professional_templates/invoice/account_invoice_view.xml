@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_account_invoice__inherit_customized" model="ir.ui.view">
+            <field name="name">account.invoice.customized</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+		 <xpath expr="//h1[hasclass('mt0')]" position="after">
+			<h2>
+			  <label for="project_title" class="oe_edit_only"/>
+                          <field name="project_title" class="oe_inline"/>
+			</h2>
+		 </xpath>
+		 <xpath expr="//field[@name='user_id']" position="after">
+			<field name="style"/>
+		 </xpath>
+		 <xpath expr="//field[@name='comment']" position="before">
+                     <group>
+                        <field name="amount_words"/>
+                    </group>
+		 </xpath>
+	    </field>
+	</record>
+<record id="account.report_invoice_document" model="ir.ui.view">
+  <field name="name">Odoo Invoice</field>
+</record>
+    </data>
+</openerp>
+

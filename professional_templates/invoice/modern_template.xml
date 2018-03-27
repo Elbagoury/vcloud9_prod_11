@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <template id="INVOICE_1_document" name="Modern Template">
+ <!-- Multicompany -->
+                <t t-if="o and 'company_id' in o">
+                    <t t-set="company" t-value="o.company_id"></t>
+                </t>
+                <t t-if="not o or not 'company_id' in o">
+                    <t t-set="company" t-value="res_company"></t>
+                </t>
+                <div t-attf-style="padding-bottom:0px; padding-left:0px; padding-right:0px; color:{{style.text_color}} !important;font-size:{{style.header_font}}px !important;font-family:{{style.font_family}} !important;" class="header col-xs-12">
+                    <t t-if="style.header">
+                  <div class="col-xs-7" style="padding-left:0px;">
+                     <span t-if="style.logo">
+			    <span itemprop="image" t-field="style.logo" t-field-options='{"widget": "image"}'/>
+		     </span>
+		     <span t-if="not style.logo and company.logo">
+			    <span itemprop="image" t-field="company.logo" t-field-options='{"widget": "image"}'/>
+		     </span>
+		     <span t-if="not style.logo and not company.logo">
+			    <span itemprop="image" t-field="company.logo" t-field-options='{"widget": "image"}'/>
+		     </span>
+                     <div t-if="company.twitter or company.facebook or company.googleplus" t-attf-style="background-color:{{style.theme_color}};width:auto;padding-left:15px; color:{{style.theme_txt_color}}; padding-right:15px; padding-top:4px; padding-bottom:2px;" class="pull-left">
+                        <span t-if="company.twitter" style="padding-left:0px;" class="fa fa-twitter-square "/>&#160;<span t-field="company.twitter"/>
+                        <span t-if="company.facebook" style="padding-left:13px;" class="fa fa-facebook-square "/>&#160;<span t-field="company.facebook"/>
+                        <span t-if="company.googleplus" style="padding-left:13px;" class="fa fa-google-plus-square "/>&#160;<span t-field="company.googleplus" />
+                     </div>
+                  </div>
+                       <div class="col-xs-5 mb8 pull-right" style="padding-bottom:2px;padding-right:0px;">
+                          <div class="pull-right" style="width:auto;padding-left:15px;">
+                              <t t-call="professional_templates.company_address"/>
+			  </div>
+                       </div>
+                   </t>
+                </div> <!--end of Header-->
+		<!-- START OF PAGE -->
+               <div class="article page" t-attf-style="color:{{style.text_color}} !important;font-size:{{style.body_font}}px !important;font-family:{{style.font_family}} !important;">
+<div class="col-xs-12" t-attf-style="white-space:pre-line;color:#{style.wm_color};left:#{style.leftpadding}mm; top:#{style.toppadding}mm;font-size:#{style.fontsize}px; opacity:#{style.opacity};z-index:-99; -webkit-transform:rotate(-#{style.rotate}deg);position:fixed;"><t t-esc="style.wm_eval(o, time, user, res_company)"/></div>
+		
+                 <div class="col-xs-12" style="padding-left:0px; padding-right:0px;"><!--start of wrapper -->
+                   <div class="col-xs-7 pull-left mt8">
+                       <div t-attf-style="display:inline;width:auto;background-color:{{style.theme_color}};padding:4px; color:{{style.theme_txt_color}};font-size:{{style.body_font+2}}px;">
+                           <span t-if="o.partner_shipping_id == o.partner_id"><span class="fa fa-user "/> Invoicing&#160; &amp;&#160; <span class="fa fa-truck "/> Shipping Address</span>
+                            <span t-if="o.partner_shipping_id != o.partner_id"><span class="fa fa-user "/> Invoicing Address</span>
+                        </div>
+                        <div t-if="o.partner_id" t-attf-style="color:{{style.cust_color}}; margin-top:5px; margin-bottom:5px; margin-left:0px;font-size:{{style.body_font+6}}px;"> 
+			      <t t-if="o.partner_id.parent_id">
+				<span t-field="o.partner_id.parent_id"/>, <span t-if="o.partner_id.title" t-field="o.partner_id.title"/> <span t-field="o.partner_id.name"/>
+			      </t>
+			      <t t-if="not o.partner_id.parent_id">
+				<span t-if="o.partner_id.title" t-field="o.partner_id.title"/> <span t-field="o.partner_id"/>
+			      </t>
+		        </div>
+                            <address t-field="o.partner_id" style="margin-bottom:0px;" 
+                                t-field-options='{"widget": "contact", "fields": ["address", "phone",  "email", "website"], "no_marker": false}'/>
+                            <span t-if="o.partner_id.vat">VAT: <span t-field="o.partner_id.vat"/></span>
+                   </div>
+                   <div class="col-xs-5 mt8 mb8 pull-right" t-attf-style="background-color:{{style.theme_color}}; color:{{style.theme_txt_color}};">
+                           <h3 id="invoice_title">
+                                <span t-if="o.type == 'out_invoice' and (o.state == 'open' or o.state == 'paid')">Invoice#</span>
+                                <span t-if="o.type == 'out_invoice' and o.state == 'proforma2'">PRO-FORMA</span>
+                                <span t-if="o.type == 'out_invoice' and o.state == 'draft'">Draft Invoice</span>
+                                <span t-if="o.type == 'out_invoice' and o.state == 'cancel'">Cancelled Invoice</span>
+                                <span t-if="o.type == 'out_refund'">Refund</span>
+                                <span t-if="o.type == 'in_refund'">Supplier Refund</span>
+                                <span t-if="o.type == 'in_invoice'">Supplier Invoice</span>
+                                <span t-field="o.number"/>
+                           </h3>
+                           <t t-set="div_style" t-value="'color:{};font-size:{}px; padding-left:4px; padding-right:4px; width:auto;max-width:100%; 
+                                float:left; margin-right:8px;'.format(style.theme_txt_color,style.body_font+2)"></t>
+                           <div t-if="o.date_invoice" t-attf-style="{{div_style}}">
+                                 <strong style="white-space:nowrap;">Invoice Date:</strong>
+                                <p t-field="o.date_invoice"/>
+                           </div>
+                           <div t-if="o.date_due" t-attf-style="{{div_style}}">
+                                 <strong style="white-space:nowrap;">Due Date:</strong>
+                                <p t-field="o.date_due"/>
+                           </div>
+                           <div t-if="o.origin" t-attf-style="{{div_style}}">
+                                 <strong style="white-space:nowrap;">Source Doc:</strong>
+                                <p t-field="o.origin"/>
+                           </div>
+                           <div t-if="o.fiscal_position_id" t-attf-style="{{div_style}}">
+                                 <strong style="white-space:nowrap;">Fiscal Position:</strong>
+                                <p t-field="o.fiscal_position_id"/>
+                           </div>
+                           <div t-if="o.name" t-attf-style="{{div_style}}">
+                                 <strong style="white-space:nowrap;">Reference:</strong>
+                                <p t-field="o.name"/>
+                           </div>
+
+                   </div>
+                   <div class="col-xs-7 pull-left mt8" t-if="o.partner_shipping_id and o.partner_shipping_id != o.partner_id">
+                       <div class="mt8" t-attf-style="display:inline;width:auto;background-color:{{style.theme_color}};padding:4px; color:{{style.theme_txt_color}};
+                           font-size:{{style.body_font+2}}px;">
+                           <span><span class="fa fa-truck "/> Shipping Address</span>
+                        </div>
+                        <address t-field="o.partner_shipping_id" style="margin-bottom:0px; margin-top:4px;" 
+                            t-field-options='{"widget": "contact", "fields": ["name", "address", "phone",  "email", "website"], "no_marker": false}'/>
+                        <span t-if="o.partner_id.vat">VAT: <span t-field="o.partner_id.vat"/></span>
+
+                   </div>
+                </div> <!--end of wrapper2-->
+                <!-- DATA-->
+                <t t-call="professional_templates.invoice_lines"/>
+                <!--/DATA-->
+               </div><!--End of PAGE-->
+                <!--FOOTER -->
+               <div class="footer" t-attf-style="font-size:{{style.footer_font}}px !important;font-family:{{style.font_family}} !important;">
+                    <t t-call="professional_templates.company_footer"/>
+               </div>
+                <!--/FOOTER-->
+   </template>
+<template id="INVOICE_1_duplicate" inherit_id="INVOICE_1_document" primary="True" name="Modern Duplicate">
+    <xpath expr="//h3[@id='invoice_title']" position="replace">
+        <h3>
+            <span>Duplicate# </span>
+            <span t-field="o.number"/>
+        </h3>
+    </xpath>
+</template>
+
+</data>
+</openerp>

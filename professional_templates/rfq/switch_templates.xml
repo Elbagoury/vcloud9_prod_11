@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+<template id="rfq">
+    <t t-call="web.report_layout">
+        <t t-foreach="docs" t-as="o">
+        <t t-set="style" t-value="o.rfq_style or res_company.default_style or user.env.ref('professional_templates.default_style_for_all_reports')"/>
+	<t t-if="style.template_rfq.key =='professional_templates.RFQ_1_document'" t-call="professional_templates.RFQ_1_document" t-lang="o.partner_id.lang"/>
+	<t t-if="style.template_rfq.key =='professional_templates.RFQ_2_document'" t-call="professional_templates.RFQ_2_document" t-lang="o.partner_id.lang"/>
+	<t t-if="style.template_rfq.key =='professional_templates.RFQ_3_document'" t-call="professional_templates.RFQ_3_document" t-lang="o.partner_id.lang"/>
+	<t t-if="style.template_rfq.key =='professional_templates.RFQ_4_document'" t-call="professional_templates.RFQ_4_document" t-lang="o.partner_id.lang"/>
+	<t t-if="style.template_rfq.key =='professional_templates.RFQ_5_document'" t-call="professional_templates.RFQ_5_document" t-lang="o.partner_id.lang"/>
+	<t t-if="style.template_rfq.key =='professional_templates.RFQ_6_document'" t-call="professional_templates.RFQ_6_document" t-lang="o.partner_id.lang"/>
+	<t t-if="style.template_rfq.key =='professional_templates.RFQ_7_document'" t-call="professional_templates.RFQ_7_document" t-lang="o.partner_id.lang"/>
+	<t t-if="style.template_rfq.key =='professional_templates.RFQ_8_document'" t-call="professional_templates.RFQ_8_document" t-lang="o.partner_id.lang"/>
+	<t t-if="style.template_rfq.key =='professional_templates.RFQ_9_document'" t-call="professional_templates.RFQ_9_document" t-lang="o.partner_id.lang"/>
+	<t t-if="style.template_rfq.key =='professional_templates.RFQ_10_document'" t-call="professional_templates.RFQ_10_document" t-lang="o.partner_id.lang"/>
+	<t t-if="style.template_rfq.key =='professional_templates.RFQ_11_document'" t-call="professional_templates.RFQ_11_document" t-lang="o.partner_id.lang"/>
+	<t t-if="not style" t-call="purchase.report_purchasequotation_document" t-lang="o.partner_id.lang"/>
+     </t>
+    </t>
+</template>
+</data>
+</openerp>

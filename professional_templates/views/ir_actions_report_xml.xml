@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="act_report_xml_view" model="ir.ui.view">
+            <field name="model">ir.actions.report</field>
+            <field name="inherit_id" ref="base.act_report_xml_view" />
+            <field name="arch" type="xml">
+                <field name="attachment" position="after">
+                    <field name="pdf_watermark" attrs="{'invisible': [('report_type', '!=', 'qweb-pdf')]}" filename="pdf_watermark_fname"/>
+                    <field name="pdf_watermark_fname" class="oe_inline" invisible="1"/>
+                    <field name="pdf_last_page" attrs="{'invisible': [('report_type', '!=', 'qweb-pdf')]}" filename="pdf_last_page_fname"/>
+                    <field name="pdf_last_page_fname" class="oe_inline" invisible="1"/>
+                    <code colspan="2" attrs="{'invisible': [('pdf_watermark', '=', False), ('pdf_last_page', '=', False)]}">
+                        NOTE: Watermark and Last Pages PDF uploaded here will override the one uploaded at company level in the general settings menu.
+                    </code>
+                </field>
+            </field>
+        </record>
+    </data>
+</openerp>

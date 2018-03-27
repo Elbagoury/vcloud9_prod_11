@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="res_config_professional_report_templates" model="ir.ui.view">
+            <field name="name">res.config.report.settings</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@id='business_documents']//div[hasclass('o_settings_container')]" position="inside">
+                            <div class="col-xs-12 o_setting_box">
+                                <div class="o_setting_right_pane">
+                                    <label string="Professional Report Templates"/>
+                                    <span class="fa fa-lg fa-building-o" title="Values set here are company-specific." groups="base.group_multi_company"/>
+                                    <div class="text-muted">
+                                        Company specific settings for printed reports
+                                    </div>
+                                    <div class="row content-group">
+                                        <div class="mt16 col-xs-4 col-md-4 text-nowrap">
+                                            <label for="default_style" string="Style" class="o_light_label"/>
+                                            <field name="default_style" class="oe_inline"/>
+                                        </div>
+                                        <div class="mt16 col-xs-4 col-md-4 text-nowrap">
+                                            <label for="pdf_watermark"  class="o_light_label"/>
+                                            <field name="pdf_watermark" class="oe_inline" filename="pdf_watermark_fname"/>
+                                            <field name="pdf_watermark_fname" class="oe_inline" invisible="1"/>
+                                        </div>
+                                        <div class="mt16 col-xs-4 col-md-4 text-nowrap">
+                                            <label for="pdf_last_page" class="o_light_label"/>
+                                            <field name="pdf_last_page" class="oe_inline" filename="pdf_last_page_fname"/>
+                                            <field name="pdf_last_page_fname" class="oe_inline" invisible="1"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+		 </xpath>
+	    </field>
+	</record>
+    </data>
+</openerp>
+

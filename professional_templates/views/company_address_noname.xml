@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <template id="company_address_noname" name="Company No name Address">
+        <div t-field="company.partner_id" style="margin-bottom:0px; padding-bottom:0px;white-space:nowrap;" t-field-options='{"widget": "contact", "fields": ["address", "phone",  "email", "website"], "no_marker": false}'/>                                      
+        <p style="margin-bottom:0px; padding-top:0px;"><span t-if="company.vat">VAT: <span t-field="company.vat"/></span></p>
+    </template>
+</data>
+</openerp>
+

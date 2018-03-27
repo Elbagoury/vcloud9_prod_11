@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <template id="rfq_lines" name="RFQ Data">
+          <t t-set="th_style" t-value="'border-bottom: 1px solid #ddd !important;white-space:nowrap;'"/>
+          <table class="table  table-condensed" t-attf-style="color:{{style.text_color}};" >
+                        <thead t-attf-style="background-color:{{style.theme_color if not style.transparent else 'transparent'}}; page-break-inside: avoid; color:{{style.theme_txt_color  if not style.transparent else style.text_color}};">
+                            <tr t-attf-style="page-break-inside: avoid !important; border-bottom: 1px solid {{style.text_color}} !important;font-size:{{style.body_font+2}}px;">
+                                <th t-attf-style="{{th_style}}"><i class="fa fa-list-ol"/> Item</th>
+                                <th t-attf-style="{{th_style}}"><i class="fa fa-th-large"/> Description</th>
+                                <th class="text-center" t-attf-style="{{th_style}}"><i class="fa fa-calendar"/> Expected Date</th>
+                                <th class="text-right" t-attf-style="{{th_style}}"><i class="fa fa-sort-amount-asc"/> Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <t t-foreach="o.order_line" t-as="line">
+                             <tr t-attf-style="background-color:{{tyle.odd if (line_parity in 'odd' and not style.transparent) else (not style.transparent and style.even)  or 'transparent'}; page-break-inside: avoid !important;">
+                                <td><span t-esc="line_index + 1"/></td>
+                               <td>
+                                    <span t-field="line.name"/>
+                               </td>
+                               <td class="text-center">
+                                   <span t-field="line.date_planned"/>
+                               </td>
+                               <td class="text-right">
+                                   <span t-field="line.product_qty"/>
+                                   <span t-field="line.product_uom" groups="product.group_uom"/>
+                               </td>
+                            </tr>
+                          </t>
+                        </tbody>
+          </table>
+          <div class="col-xs-12 pull-left" style="padding-left:0px; padding-right:0px; page-break-inside: avoid ! important;">
+                     <p t-if="o.payment_term_id.note">
+                        <span t-field="o.payment_term_id.note"/>
+                     </p>
+                     <p t-if="o.incoterm_id">
+                        <span>Shipping:</span><span t-field="o.incoterm_id"/>
+                     </p>
+                     <p id="payment_term" t-if="not o.payment_term_id and o.partner_id.property_payment_term_id">
+                        <span t-field="o.partner_id.property_payment_term_id.note"/>
+                     </p>
+
+                     <p t-if="o.fiscal_position_id.note">
+                         <strong>Fiscal Position Remark:</strong> <span t-field="o.fiscal_position_id.note"/>
+                     </p>
+                     <p t-if="o.notes">
+                        <span t-field="o.notes"/>
+                     </p>
+          </div>
+    </template>
+</data>
+</openerp>
+

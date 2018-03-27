@@ -1,0 +1,8 @@
+<openerp>
+    <data>
+      <template id="RFQ_5_document" name="Odoo Template">
+       <t t-call="purchase.report_purchasequotation_document" t-lang="o.partner_id.lang"/>
+     </template>
+
+    </data>
+</openerp>

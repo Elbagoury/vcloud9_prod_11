@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_sale_order_inherit_customized" model="ir.ui.view">
+            <field name="name">sale.order.customized</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                 <xpath expr="//h1" position="after">
+                        <h2>
+                          <label for="project_title" class="oe_edit_only"/>
+                          <field name="project_title" class="oe_inline"/>
+                        </h2>
+                 </xpath>
+
+		 <xpath expr="//field[@name='validity_date']" position="after">
+			<field name="style"/>
+		 </xpath>
+		 <xpath expr="//field[@name='note']" position="before">
+                     <group>
+			<field name="amount_words"/>
+                    </group>
+		 </xpath>
+	    </field>
+	</record>
+<record id="sale.report_saleorder_document" model="ir.ui.view">
+  <field name="name">Odoo Template</field>
+</record>
+    </data>
+</openerp>
+

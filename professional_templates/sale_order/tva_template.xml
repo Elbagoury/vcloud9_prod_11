@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <template id="SO_4_document" name="TVA Template">
+                 <!-- Multicompany -->
+                <t t-if="doc and 'company_id' in doc">
+                    <t t-set="company" t-value="doc.company_id"></t>
+                </t>
+                <t t-if="not doc or not 'company_id' in doc">
+                    <t t-set="company" t-value="res_company"></t>
+                </t>
+                <div t-attf-style="padding-bottom:0px; padding-left:0px; padding-right:0px; color:{{style.text_color}} !important;font-size:{{style.header_font}}px !important;font-family:{{style.font_family}} !important;" class="col-xs-12 header">
+                    <t t-if="style.header">
+                       <div class="col-xs-5 pull-left" t-attf-style="padding:15px; border:1px solid {{style.text_color}};">
+                           <t t-call="professional_templates.company_address"/>
+                       </div>
+			<div class="col-xs-5 pull-right" t-attf-style="border: 1px solid {{style.text_color}}; color:{{style.text_color}};">
+			     <strong t-if="doc.state not in ['draft','sent']">Date Ordered:</strong>
+                             <strong t-if="doc.state in ['draft','sent']">Quotation Date:</strong>
+                             <span t-field="doc.date_order"/>
+			</div>
+                       <div class="col-xs-7 pull-right" style="text-align:right; padding-left:0px; padding-right:0px;">
+                         <div t-if="style.logo" style="width:100%; text-align:right; padding-bottom:3px; padding-top:3px;">
+			    <span itemprop="image" t-field="style.logo" t-field-options='{"widget": "image", "style": "max-height:120px; display: inline-block;"}'/>
+			 </div>
+			 <div t-if="not style.logo and company.logo" style="width:100%; text-align:right;padding-bottom:8px;padding-top:3px;">
+			    <span itemprop="image" t-field="company.logo" t-field-options='{"widget": "image", "style": "display: inline-block;"}'/>
+			 </div>
+			 <div t-if="not style.logo and not company.logo" style="width:100%;text-align:right;padding-bottom:8px;padding-top:3px;">
+			    <span itemprop="image" t-field="company.logo" t-field-options='{"widget": "image", "style": "display: inline-block;"}'/>
+			 </div>
+                         <div t-if="company.twitter or company.facebook or company.googleplus" t-attf-style="background-color:{{style.theme_color}}; width:auto; float:right; padding-left:15px; color:{{style.theme_txt_color}}; 
+                                   padding-right:15px; padding-top:2px; padding-bottom:2px;" class="pull-right">
+                                <span t-if="company.twitter" style="padding-left:0px;" class="fa fa-twitter-square "/>&#160;<span t-field="company.twitter"/>
+                                <span t-if="company.facebook" style="padding-left:13px;" class="fa fa-facebook-square "/>&#160;<span t-field="company.facebook"/>
+                                <span t-if="company.googleplus" style="padding-left:13px;" class="fa fa-google-plus-square "/>&#160;<span t-field="company.googleplus" />
+                         </div>
+
+                       </div> 
+                   </t>
+                </div> 
+		<!-- START OF PAGE -->
+                <div class="article page" t-attf-style="color:{{style.text_color}} !important;font-size:{{style.body_font}}px !important;font-family:{{style.font_family}} !important;">
+                    <div class="col-xs-12" t-attf-style="white-space:pre-line;color:#{style.wm_color};left:#{style.leftpadding}mm; top:#{style.toppadding}mm;font-size:#{style.fontsize}px; opacity:#{style.opacity};z-index:-99; -webkit-transform:rotate(-#{style.rotate}deg);position:fixed;"><t t-esc="style.wm_eval(doc, time, user, res_company)"/></div>
+                     	<div class="col-xs-5 pull-left" t-attf-style="color:{{style.text_color}} !important; border:1px solid {{style.text_color}}">
+                             <h3 id="title" style="margin-top:10px;">
+		                <span t-if="doc.state not in ['draft','sent']">Order  </span>
+                		<span t-if="doc.state in ['draft','sent']">Quotation  </span>
+               			<span t-field="doc.name"/>
+
+                            </h3>
+	                </div>
+	                <div class="col-xs-6 pull-right" style="border:1px solid;padding:15px;">
+                             <div class="pull-left" style="padding-top:5px; padding-bottom:0px; width:100%;">
+                                <span t-if="doc.partner_shipping_id == doc.partner_invoice_id" t-attf-style="font-size:{{style.body_font+6}}px; font-weight:bold;">
+                                <span class="fa fa-file-text"/> Invoicing &amp; <span class="fa fa-truck"/> Shipping Address:</span>
+                                <span t-if="doc.partner_shipping_id != doc.partner_invoice_id" t-attf-style="font-size:{{style.body_font+6}}px; font-weight:bold;">
+                                <span class="fa fa-file-text"/> Invoicing Address:</span>
+                            </div>
+                            <div class="pull-left" style="widht:100%;">
+                                <div t-if="doc.partner_id" t-attf-style="color:{{style.cust_color}}; margin-top:2px; margin-bottom:5px; margin-left:0px;font-size:{{style.body_font+6}}px;">
+                              <t t-if="doc.partner_id.parent_id">
+                                <span t-field="doc.partner_id.parent_id"/>, <span t-if="doc.partner_id.title" t-field="doc.partner_id.title"/> <span t-field="doc.partner_id.name"/>
+                              </t>
+                              <t t-if="not doc.partner_id.parent_id">
+                                <span t-if="doc.partner_id.title" t-field="doc.partner_id.title"/> <span t-field="doc.partner_id"/>
+                              </t>
+
+                               </div>
+                               <address t-field="doc.partner_id" style="margin-bottom:0px;" 
+                                        t-field-options='{"widget": "contact", "fields": ["address", "phone",  "email", "website"]}'/>
+                                        <span t-if="doc.partner_id.vat">VAT: <span t-field="doc.partner_id.vat"/></span>
+                             </div>
+        	        </div>
+		  	<div t-if="doc.partner_shipping_id != doc.partner_invoice_id" class="col-xs-6 pull-left" style="padding:4px"/>
+                   	<div t-if="doc.partner_shipping_id != doc.partner_invoice_id" class="col-xs-5 pull-left" 
+			     t-attf-style="border:1px solid {{style.text_color}};padding:15px;">
+                                <span t-if="doc.partner_shipping_id" t-attf-style="font-size:{{style.body_font+6}}px; font-weight:bold;">
+                                <span class="fa fa-truck"/> Shipping Address:</span>
+
+                            <div t-if="doc.partner_shipping_id" t-attf-style="color:{{style.cust_color}}; margin-top:2px; margin-bottom:5px; margin-left:0px;font-size:{{style.body_font+6}}px;"> 
+				<span t-if="doc.partner_shipping_id.title" t-field="doc.partner_shipping_id.title"/> <span t-field="doc.partner_shipping_id"/>
+			    </div>
+                            <address t-field="doc.partner_shipping_id" style="margin-bottom:0px;" 
+                               t-field-options='{"widget": "contact", "fields": ["address", "phone",  "email", "website"], "no_marker": false}'/>                                       <span t-if="doc.partner_shipping_id.vat">VAT: <span t-field="doc.partner_shipping_id.vat"/></span>
+
+                  	</div>
+		
+		<div class="col-xs-12 pull-right" style="padding:4px;"/>
+                 <div class="col-xs-12 text-center" style="padding-top:8px; border:1px solid">
+                           <t t-set="div_style" t-value="'white-space:nowrap; width:auto; float:left; padding-left:4px; padding-right:4px;font-size:{}'.format(style.body_font+2)"></t>
+                           <div t-if="doc.client_order_ref" t-attf-style="{{div_style}}">
+                                 <strong>Client Reference:</strong>
+                                <p t-field="doc.client_order_ref"/>
+                           </div>
+                            <!-- UNCOMMENT THE DIV BELOW IF YOU WANT DATE TO APPEAR-->
+                           <!--<div t-if="doc.date_order" t-attf-style="{{div_style}}">
+                                <strong t-if="doc.state not in ['draft','sent']">Date Ordered:</strong>
+                                <strong t-if="doc.state in ['draft','sent']">Quotation Date:</strong>
+                                <p t-field="doc.date_order"/>
+                           </div>-->
+                           <div t-if="doc.state in ['draft','sent'] and doc.validity_date" t-attf-style="{{div_style}}">
+                                 <strong>Valid Until:</strong>
+                                <p t-field="doc.validity_date"/>
+                           </div>
+                           <div t-if="doc.sudo().user_id.name" t-attf-style="{{div_style}}">
+                                 <strong>Salesperson:</strong>
+                                <p t-field="doc.sudo().user_id.name"/>
+                           </div>
+                           <div t-if="doc.fiscal_position_id" t-attf-style="{{div_style}}">
+                                 <strong>Fiscal Position:</strong>
+                                <p t-field="doc.fiscal_position_id"/>
+                           </div>
+
+                 </div> 
+                <!-- DATA-->
+                <t t-call="professional_templates.order_lines"/>
+                <!--/DATA-->
+
+               </div>
+                <!--FOOTER -->
+                <div class="footer" t-attf-style="font-size:{{style.footer_font}}px !important;font-family:{{style.font_family}} !important;">
+                    <t t-set="o" t-value="doc"/>
+                <t t-call="professional_templates.company_footer"/>
+	       </div>
+                <!--/FOOTER-->
+
+    </template>
+</data>
+</openerp>

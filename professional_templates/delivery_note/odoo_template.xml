@@ -1,0 +1,7 @@
+<openerp>
+    <data>
+      <template id="DN_5_document" name="Odoo Template">
+       <t t-call="stock.report_delivery_document" t-lang="o.partner_id.lang"/>
+     </template>
+    </data>
+</openerp>

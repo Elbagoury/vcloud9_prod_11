@@ -1,0 +1,17 @@
+<openerp>
+<data>
+<record id="ke_res_partner_inherit1" model="ir.ui.view">
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+        <xpath expr="//page[@name = 'internal_notes']" position="inside">
+                <field name="delivery_instructions" placeholder="Delivery Instructions..."/>
+        </xpath>
+        <xpath expr="//field[@name = 'user_id']" position="before">
+                <field name="style"/>
+        </xpath>
+    </field>
+</record>
+    </data>
+</openerp>
+

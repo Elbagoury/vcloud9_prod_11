@@ -1,0 +1,13 @@
+<openerp>
+    <data>
+            <!--inherits the default sales report  and override its name  and file-->
+        <report 
+            string="Request for Quotation" 
+            id="purchase.report_purchase_quotation" 
+            model="purchase.order" 
+            report_type="qweb-pdf"
+            name="professional_templates.rfq" 
+            file="professional_templates.rfq"
+        />
+    </data>
+</openerp>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+	<template id="realcom_lines">
+	   <div class="col-xs-12" style="padding:8px;"/>
+
+            <!-- Is there a discount on at least one line? -->
+            <t t-set="display_discount" t-value="any([l.discount for l in o.invoice_line_ids])"/>
+            <!-- Is there tax in at least one line? -->
+            <t t-set="display_taxes" t-value="any([y.invoice_line_tax_ids for y in o.invoice_line_ids])"/>
+            <!-- to take care of columns when no discount -->
+            <t t-set="col_span" t-value="8 if display_discount else 7"/>
+            <t groups="sale.group_sale_layout" t-foreach="o.order_lines_layouted()" t-as="page">
+                <table class="table  table-condensed" t-attf-style="color:{{style.text_color}};" >
+                    <thead>
+                        <t t-set="th_style" t-value="'border-bottom: 1px solid {} !important;white-space:nowrap;'.format(style.text_color)"></t>
+                        <tr t-attf-style="font-size:{{style.body_font+2}}px;">
+                            <th t-attf-style="{{th_style}}">Description</th>
+                            <th class="text-right" t-attf-style="{{th_style}}"> U.M</th>
+                            <th class="text-right" t-attf-style="{{th_style}}"> Quantity</th>
+                            <th class="text-right" t-attf-style="{{th_style}}"> Unit Price</th>
+                            <th t-if="display_discount" class="text-right" t-attf-style="{{th_style}}" 
+                                            groups="sale.group_discount_per_so_line"> Discount(%)</th>
+                            <th class="text-right" t-attf-style="{{th_style}}"> Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="page" t-as="layout_category">
+                            <!-- Name of the category -->
+                            <t t-if="layout_category_size &gt; 1 or page_size &gt; 1" t-call="professional_templates.category_template">
+                                <t t-set="doc" t-value="o"/>
+                                <t t-set="cols" t-value="col_span"  />
+                            </t>
+                            <!-- Lines associated -->
+                            <t t-foreach="layout_category['lines']" t-as="l">
+                                <tr style="page-break-inside: avoid">
+                                    <td><span t-field="l.name"/></td>
+                                    <td class="text-right"><span t-field="l.uom_id" groups="product.group_uom"/></td>
+                                    <td class="text-right">
+                                        <span t-field="l.quantity"/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="l.price_unit"  t-options="{'widget': 'monetary', 'display_currency': o.currency_id}" />
+                                    </td>
+                                    <td t-if="display_discount" class="text-right" groups="sale.group_discount_per_so_line"><span t-field="l.discount"/></td>
+                                    <td class="text-right">
+                                            <span t-field="l.price_subtotal"/>
+
+                                    </td>
+                                </tr>
+                            </t>
+                                <!-- Subtotal -->
+                            <t t-if="(layout_category_size &gt; 1 or page_size &gt; 1) and layout_category['subtotal']">
+                                <tr class="text-right">
+                                    <td t-attf-colspan="{{col_span}}">
+                                        <strong>Subtotal: </strong>
+                                        <t t-set="subtotal" t-value="sum(line.price_subtotal for line in layout_category['lines'])"/>
+                                        <span t-esc="subtotal" t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"/>
+                                    </td>
+                                </tr>
+                            </t>
+                        </t>
+                    </tbody>
+                </table>
+                <p t-if="page_index &lt; page_size - 1" style="page-break-before:always;"> </p>
+            </t>
+            <div class="col-xs-12 totals" t-attf-style="padding-left:0px; padding-right:0px;border-top:2px solid {{style.text_color}};">
+                   <div class="col-xs-5 pull-right" style="padding-left:0px; padding-right:0px; page-break-inside: avoid;`">
+                    <table class="table table-condensed" t-attf-style="color:{{style.text_color}};"><tbody>
+                        <tr t-if="display_taxes">
+                            <td><strong>Subtotal</strong></td>
+                            <td class="text-right">
+                                <span t-field="o.amount_untaxed"/>
+
+                            </td>
+                        </tr>
+                        <tr t-if="display_taxes">
+                            <td><strong>Taxes</strong></td>
+                            <td class="text-right">
+                                <span t-field="o.amount_tax"/>
+
+                            </td>
+                        </tr>
+                        <tr t-attf-style="border-bottom: 1px solid {{style.text_color}};">
+                            <td t-attf-style="border-top: 1px solid {{style.text_color}} !important;"><strong>Total</strong></td>
+                            <td class="text-right" t-attf-style="border-top: 1px solid {{style.text_color}} !important;">
+                                 <strong>
+                                        <span  style="font-weight:bold; text-decoration:underline;" t-field="o.amount_total"/>
+                                </strong>
+                            </td>
+                        </tr>
+			</tbody>
+                    </table>
+                   </div>
+                   <div class="col-xs-7 pull-left mt8" style="padding-top:1px; padding-left:0px; padding-right:0px; page-break-inside: avoid;">
+                         <p t-if="o.payment_term_id">
+                            <strong>Payment Terms: </strong>
+                            <span t-field="o.payment_term_id"/>
+                         </p>
+                        <div> <!--Bank Details -->
+                            <ul style="padding: 0px;">
+                                <strong>Bank Details </strong>
+                                <t t-foreach="company.bank_journal_ids" t-as="journal">
+                                    <!--<t t-if="journal.display_on_footer">-->
+                                        <t t-set="bank_acc" t-value="journal.bank_account_id"/>
+                                        <div>
+                                            <span t-field="bank_acc.bank_name"/><t t-if="bank_acc.bank_bic"> (<span t-field="bank_acc.bank_bic"/>)</t>: <span t-field="bank_acc.acc_number"/>
+                                        </div>
+                                        <!--</t>-->
+                                </t>
+                                <div class="mt8" t-if="company.vat"><strong>VAT:</strong> <span t-field="company.vat"/></div>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="col-xs-12" style="padding-left:0px; padding-right:0px; page-break-inside: avoid;">
+                    <p t-if="style.aiw_report">
+                        <strong>Amount in Words:</strong><span style="text-decoration:underline;" t-field="o.amount_words"/>
+                    </p>
+                     <p t-if="o.incoterms_id">
+                        <strong>Shipping Terms:</strong> <span t-field="o.incoterms_id"/>
+                     </p>
+                     <p t-if="o.fiscal_position_id.note">
+                         <strong>Fiscal Position Remark:</strong> <span t-field="o.fiscal_position_id.note"/>
+                     </p>
+                     <p t-if="o.comment">
+                        <strong>Note:</strong> <span t-field="o.comment"/>
+                     </p>
+                </div>
+            </div>
+	</template>
+</data>
+</openerp>
+                      

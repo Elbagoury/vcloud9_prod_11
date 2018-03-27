@@ -1,0 +1,13 @@
+<openerp>
+    <data>
+            <!--inherits the default sales report  and override its name  and file-->
+      <report 
+            id="purchase.action_report_purchase_order"
+            model="purchase.order"
+            string="Purchase Order"
+            report_type="qweb-pdf"
+            name="professional_templates.purchase_order"
+            file="professional_templates.purchase_order"
+      />
+    </data>
+</openerp>

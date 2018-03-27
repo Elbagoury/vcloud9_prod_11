@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <template id="company_footer_old" name="page Footer">
+        <t t-set="company" t-value="company.sudo()"/>
+    <div class="col-xs-12" style="padding-left:0px; padding-right:0px;">
+         <div class="text-center" t-attf-style="color:{{style.text_color}};border-top: 1px solid {{style.text_color}};padding-top:5px;">
+            <ul t-if="not company.custom_footer" class="list-inline" name="financial_infos" style="white-space:nowrap;">
+                <li t-if="company.name"><i class="fa fa-university"/> <span t-field="company.name"/></li>
+                <li t-if="company.name and company.phone">&amp;bull;</li>
+                <li t-if="company.phone"><i class="fa fa-phone-square"/> <span t-field="company.phone"/></li>
+                <li t-if="company.email and company.phone or company.email and company.name">&amp;bull;</li>
+                <li t-if="company.email"><i class="fa fa-envelope"/> <span t-field="company.email"/></li>
+
+                <li t-if="company.website and company.email or company.website and company.phone or 
+                        company.website and company.name">&amp;bull;</li>
+                <li t-if="company.website"><i class="fa fa-globe"/> <span t-field="company.website"/></li>
+                <li t-if="company.vat and company.email or company.vat and company.website or 
+                        company.vat and company.phone">&amp;bull;</li>
+                <li t-if="company.vat" ><i class="fa fa-building"/> <span t-field="company.vat"/></li>
+            </ul>
+            <t t-if="company.custom_footer">
+                <span t-raw="company.rml_footer"/>
+            </t>
+            <ul class="list-inline">
+                <li>Page:</li>
+                <li><span class="page"/></li>
+                <li>/</li>
+                <li><span class="topage"/></li>
+            </ul>
+         </div>
+    </div>
+    </template>
+    <template id="company_footer" name="page Footer">
+     <t t-if="style.footer">
+        <t t-set="company" t-value="company.sudo()"/>
+        <t t-set="footer_style" t-value="'text-align:left;display:inline-block;width:auto;max-width:100%;white-space:nowrap;'"></t>
+<div class="col-xs-12 text-center" t-attf-style="background-color:transparent !important; color:{{style.text_color}};border-top: 1px solid {{style.text_color}};padding-top:5px;padding-left:0px; padding-right:0px;">
+	<t t-if="not company.report_footer">
+            <div t-attf-style="#{footer_style}" t-attf-class="#{style.show_footer_logo and 'mr16' or 'mr32'}"> <!--Address -->
+                <ul style="padding: 0px;">
+                    <div t-if="company.name"><span t-field="company.name"/></div>
+                    <div t-if="company.street"><i class="fa fa-map-marker"/> <span t-field="company.street"/></div>
+                    <div t-if="company.street2" class="ml8"><span t-field="company.street2"/></div>
+                    <div t-if="company.city or company.state_id or company.zip" class="ml8"><span t-field="company.city"/> <span t-field="company.state_id"/> <span t-field="company.zip"/></div>
+                    <div t-if="company.country_id" class="ml8"><span t-field="company.country_id"/></div>
+                </ul>
+            </div>
+            <div t-attf-style="#{footer_style}" t-attf-class="#{style.show_footer_logo and 'mr16' or 'mr32'}"><!--Contacts -->
+                <ul style="padding: 0px;">
+                    <div t-if="company.phone"><i class="fa fa-phone-square"/> <span t-field="company.phone"/></div>
+                    <div t-if="company.website"><i class="fa fa-globe"/> <span t-field="company.website"/></div>
+                    <div t-if="company.email"><i class="fa fa-envelope"/> <span t-field="company.email"/></div>
+                    <div t-if="company.facebook or company.twitter or company.googleplus">
+                        <i class="fa fa-facebook-square" t-if="company.facebook" /> <span t-if="company.facebook" t-field="company.facebook"/>
+                        <i class="fa fa-twitter-square" t-if="company.twitter" /> <span t-if="company.twitter" t-field="company.twitter"/>
+                        <i class="fa fa-google-plus-square" t-if="company.googleplus" /> <span t-if="company.googleplus" t-field="company.googleplus"/>
+                    </div>
+                </ul>
+            </div>
+            <div t-attf-style="#{footer_style}" class="mr16"> <!--Bank Details -->
+                <ul style="padding: 0px;">
+                    <t t-foreach="company.bank_journal_ids" t-as="journal">
+                        <!--<t t-if="journal.display_on_footer"> -->
+                            <t t-set="bank_acc" t-value="journal.bank_account_id"/>
+                            <div t-if="bank_acc">
+                                <i class="fa fa-building"/>  
+                                <span t-field="bank_acc.bank_name"/><t t-if="bank_acc.bank_bic"> (<span t-field="bank_acc.bank_bic"/>)</t>: <span t-field="bank_acc.acc_number"/>
+                            </div>
+                            <!--</t>-->
+                    </t>
+                    <div t-if="company.vat"><i class="fa fa-certificate" aria-hidden="true"/> VAT: <span t-field="company.vat"/></div>
+                </ul>
+            </div>
+            <div t-if="style.show_footer_logo" t-attf-style="#{footer_style}"> <!--Footer Logo (optional) -->
+                <ul style="padding: 0px;">
+                    <div>
+                        <span t-if="style.footer_logo" itemprop="image" t-field="style.footer_logo" t-field-options='{"widget": "image", "style": "max-width:100px;"}'/>
+                        <span t-if="not style.footer_logo and style.logo" itemprop="image" t-field="style.logo" t-field-options='{"widget": "image", "style": "max-width:100px;"}'/>
+                        <span t-if="not style.footer_logo and not style.logo and company.logo" itemprop="image" t-field="company.logo" t-field-options='{"widget": "image", "style": "max-width:100px;"}'/>
+                    </div>
+                </ul>
+            </div>
+	</t>
+	    <div t-if="company.report_footer" class="text-center"><span t-field="company.report_footer"/></div>
+            <div class="col-xs-12 text-center">
+                <ul class="list-inline">
+                    <li>Page:</li>
+                    <li><span class="page"/></li>
+                    <li>/</li>
+                    <li><span class="topage"/></li>
+                </ul>
+            </div>
+        </div>
+    </t>
+    </template>
+</data>
+</openerp>
+

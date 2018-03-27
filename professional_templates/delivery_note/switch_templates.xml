@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+<template id="report_deliveryslip">
+    <t t-call="web.report_layout">
+        <t t-foreach="docs" t-as="o">
+        <t t-set="style" t-value="o.dn_style or res_company.default_style or user.env.ref('professional_templates.default_style_for_all_reports')"/>
+	<t t-if="style.template_dn.key == 'professional_templates.DN_1_document'" t-call="professional_templates.DN_1_document" t-lang="o.partner_id.lang"/>
+	<t t-if="style.template_dn.key == 'professional_templates.DN_2_document'" t-call="professional_templates.DN_2_document" t-lang="o.partner_id.lang"/>
+	<t t-if="style.template_dn.key == 'professional_templates.DN_3_document'" t-call="professional_templates.DN_3_document" t-lang="o.partner_id.lang"/>
+	<t t-if="style.template_dn.key == 'professional_templates.DN_4_document'" t-call="professional_templates.DN_4_document" t-lang="o.partner_id.lang"/>
+	<t t-if="style.template_dn.key == 'professional_templates.DN_5_document'" t-call="professional_templates.DN_5_document" t-lang="o.partner_id.lang"/>
+	<t t-if="style.template_dn.key == 'professional_templates.DN_6_document'" t-call="professional_templates.DN_6_document" t-lang="o.partner_id.lang"/>
+	<t t-if="style.template_dn.key == 'professional_templates.DN_7_document'" t-call="professional_templates.DN_7_document" t-lang="o.partner_id.lang"/>
+	<t t-if="style.template_dn.key == 'professional_templates.DN_8_document'" t-call="professional_templates.DN_8_document" t-lang="o.partner_id.lang"/>
+	<t t-if="style.template_dn.key == 'professional_templates.DN_9_document'" t-call="professional_templates.DN_9_document" t-lang="o.partner_id.lang"/>
+	<t t-if="style.template_dn.key == 'professional_templates.DN_10_document'" t-call="professional_templates.DN_10_document" t-lang="o.partner_id.lang"/>
+	<t t-if="style.template_dn.key == 'professional_templates.DN_11_document'" t-call="professional_templates.DN_11_document" t-lang="o.partner_id.lang"/>
+	<t t-if="not style" t-call="stock.report_delivery_document" t-lang="o.partner_id.lang"/>
+     </t>
+    </t>
+</template>
+</data>
+</openerp>
