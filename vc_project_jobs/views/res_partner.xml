@@ -1,0 +1,69 @@
+<odoo>
+	<data>
+
+
+                <record model = "ir.ui.view" id = "add_address">
+                        <field name = "name">res.partner.tree.with_address</field>
+                        <field name = "model">res.partner</field>
+                        <field name = "inherit_id" ref = "base.view_partner_tree"/>
+                        <field name = "arch" type = "xml">
+                            <data>
+
+<field name="display_name" position="attributes">
+    <attribute name="string">Display Name</attribute>
+</field>
+
+<field name="display_name" position="after">
+    <field name="name"/>
+    <field name="type"/>
+    <field name="parent_id"/>
+    <field name="street"/>
+    <field name="street2"/>
+    <field name="city"/>
+    <field name="state_id"/>
+    <field name="zip"/>
+</field>                          
+                            </data>
+                        </field>
+                </record>
+
+		<record model = "ir.ui.view" id = "add_county_id">
+			<field name = "name">res.partner.form.with_county</field>
+			<field name = "model">res.partner</field>
+			<field name = "inherit_id" ref = "base.view_partner_form"/>
+			<field name = "arch" type = "xml">
+				<data>
+
+<xpath expr = "//form/sheet/group/group/div/field[@name='country_id']" position = "before">
+    <field name = "county_id" 
+            options = "{'no_create': True, 'no_create_edit': True}" 
+            domain = "[('state_id','=',state_id)]" 
+            placeholder = "County (for Prevailing Wage Rates)"
+    />
+</xpath>
+
+
+<xpath expr = "//notebook/page/field/kanban/field[@name='country_id']" position = "before">
+	<field name = "county_id"/>
+</xpath>
+
+
+<xpath expr = "//notebook/page/field/kanban/templates/t/div/div[@class='oe_kanban_details']/div/field[@name='country_id']" position = "before">
+	<field t-if = "record.county_id.raw_value" name = "county_id"/>
+</xpath>
+
+
+<xpath expr = "//notebook/page/field/form/sheet/group/group/div/div/field[@name='country_id']" position = "before">
+	<field name = "county_id" 
+               options = "{'no_create': True, 'no_create_edit': True}" 
+               domain = "[('state_id','=',state_id)]" 
+               placeholder = "County (for Prevailing Wage Rates)"
+	/>
+</xpath>
+
+				</data>
+			</field>
+		</record>
+
+	</data>
+</odoo>

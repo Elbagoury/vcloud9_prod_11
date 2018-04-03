@@ -1,0 +1,27 @@
+<odoo>
+<data>
+
+        <record id = "view_job_crew" model = "ir.ui.view">
+            <field name = "name">job.crew.tree</field>
+            <field name = "model">job.crew</field>
+            <field name = "arch" type = "xml">
+                <tree string = "Job Crews" editable = "top">
+                    <field name = "name" />
+                    <field name = "employee_ids" widget = "many2many_tags"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id = "action_job_crew" model = "ir.actions.act_window">
+            <field name = "name">Job Crews</field>
+            <field name = "res_model">job.crew</field>
+            <field name = "view_type">form</field>
+            <field name = "view_mode">tree</field>
+        </record>
+
+
+        <menuitem action = "action_job_crew" id = "menu_job_crew" name = "Job Crews" 
+                  parent = "menu_job_configuration" sequence = "20"/>
+
+</data>
+</odoo>

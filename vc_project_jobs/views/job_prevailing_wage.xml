@@ -1,0 +1,32 @@
+<odoo>
+<data>
+
+        <menuitem id = "menu_job_configuration" name = "Configuration" parent = "menu_main_jobs" sequence = "99"/>
+
+        <record id = "view_job_prevailing_wage" model = "ir.ui.view">
+            <field name = "name">job.prevailing.wage.tree</field>
+            <field name = "model">job.prevailing.wage</field>
+            <field name = "arch" type = "xml">
+                <tree string = "Prevailing Wages" editable = "top">
+                    <field name = "county_id"/>
+                    <field name = "job_class_id"/>
+                    <field name = "wage"/>
+                    <field name = "benefit"/>
+                    <field name = "pw_total" readonly = "1"/>
+                    <field name = "start_date" />
+                    <field name = "end_date" />
+                </tree>
+            </field>
+        </record>
+
+        <record id = "action_job_prevailing_wage" model = "ir.actions.act_window">
+            <field name = "name">Prevailing Wages</field>
+            <field name = "res_model">job.prevailing.wage</field>
+            <field name = "view_type">form</field>
+            <field name = "view_mode">tree</field>
+        </record>
+
+        <menuitem action = "action_job_prevailing_wage" id = "menu_job_prevailing_wage" 
+                   name = "Prevailing Wages" parent = "menu_job_configuration" sequence = "100"/>
+</data>
+</odoo>

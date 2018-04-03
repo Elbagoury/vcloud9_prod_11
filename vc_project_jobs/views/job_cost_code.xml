@@ -1,0 +1,27 @@
+<odoo>
+<data>
+
+        <record id = "view_job_cost_code" model = "ir.ui.view">
+            <field name = "name">job.cost.code.tree</field>
+            <field name = "model">job.cost.code</field>
+            <field name = "arch" type = "xml">
+                <tree string = "Job Cost Codes" editable = "top">
+                    <field name = "code" />
+                    <field name = "name" />
+                </tree>
+            </field>
+        </record>
+
+        <record id = "action_job_cost_code" model = "ir.actions.act_window">
+            <field name = "name">Job Cost Codes</field>
+            <field name = "res_model">job.cost.code</field>
+            <field name = "view_type">form</field>
+            <field name = "view_mode">tree</field>
+        </record>
+
+
+        <menuitem action = "action_job_cost_code" id = "menu_job_cost_code" name = "Job Cost Codes" 
+                  parent = "menu_job_configuration" sequence = "15"/>
+ 
+</data>
+</odoo>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<odoo>
+<data>
+
+    <!-- Standard Closing Reason -->
+    <record id="sale_contract.close_reason_1" model="sale.subscription.close.reason">
+        <field name="name">Price not competitive</field>
+    </record>
+    <record id="sale_contract.close_reason_2" model="sale.subscription.close.reason">
+        <field name="name">Services not sufficient</field>
+    </record>
+    <record id="sale_contract.close_reason_3" model="sale.subscription.close.reason">
+        <field name="name">End Date reach with no renewal</field>
+    </record>
+    <record id="sale_contract.close_reason_4" model="sale.subscription.close.reason">
+        <field name="name">Never used after awarded</field>
+    </record>
+    <record id="sale_contract.close_reason_5" model="sale.subscription.close.reason">
+        <field name="name">Other</field>
+    </record>
+
+    <!-- Subtypes -->
+    <record id="sale_contract.subtype_state_change" model="mail.message.subtype">
+        <field name="name">State Change</field>
+        <field name="res_model">sale.subscription</field>
+        <field name="default" eval="True"/>
+        <field name="internal" eval="True"/>
+        <field name="description">Project state has changed</field>
+    </record>
+
+    <record id="sale_contract.seq_sale_subscription" model="ir.sequence">
+            <field name="name">Subscription Projects</field>
+            <field name="code">sale.subscription</field>
+            <field name="prefix">CONTRACT</field>
+            <field name="padding">8</field>
+            <field name="company_id" eval="False"/>
+    </record>
+
+</data>
+</odoo>

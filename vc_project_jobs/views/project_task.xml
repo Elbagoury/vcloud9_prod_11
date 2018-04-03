@@ -1,0 +1,21 @@
+<odoo>
+	<data>
+
+
+  <menuitem name = "Jobs"
+            id = "menu_main_jobs"
+            groups = "project.group_project_manager,project.group_project_user"
+            web_icon = "fa fa-wrench,#ffffff,#7c79b8"
+            sequence = "51"/>
+
+  <menuitem name = "Search"
+            id = "menu_job_management"
+            parent = "menu_main_jobs"
+            sequence = "2" groups = "base.group_no_one,project.group_project_user"/>
+            
+  <menuitem id = "menu_job_configuration" name = "Configuration" parent = "menu_main_jobs"
+            sequence = "100" groups = "project.group_project_manager"/>
+            
+        
+	</data>
+</odoo>

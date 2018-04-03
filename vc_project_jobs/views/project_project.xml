@@ -1,0 +1,307 @@
+<odoo>
+  <data>
+
+        <!-- Top menu item -->
+        <menuitem name = "Projects"
+            id = "project.menu_main_pm" />
+
+        <menuitem name = "Jobs"
+            id = "menu_main_jobs" />
+
+        <record id="view_project_tree" model="ir.ui.view">
+            <field name="name">project.project.tree.jobs</field>
+            <field name="model">project.project</field>
+            <field name="arch" type="xml">
+                <tree decoration-bf="message_needaction==True" decoration-muted="active == False" string="Jobs">
+                    <field name="sequence" widget="handle"/>
+                    <field name="message_needaction" invisible="1"/>
+                    <field name="active" invisible="1"/>
+                    <field name="date_from" />
+                    <field name="date_to" />
+                    <field name="name" string="Name"/>
+                    <field name="user_id" string="Project Manager"/>
+                    <field name="partner_id" string="Customer"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id = "open_view_job_all" model = "ir.actions.act_window">
+            <field name = "name">Jobs</field>
+            <field name = "res_model">project.project</field>
+            <field name = "view_type">form</field>
+            <field name = "domain">[('project_type','=','job')]</field>
+            <field name = "view_mode">tree,form</field>
+            <field name = "search_view_id" ref = "project.view_project_project_filter"/>
+            <field name = "view_id" ref="view_project_tree"/>
+            <field name = "context">{'default_project_type': 'job'}</field>
+            <field name = "help" type = "html">
+                <p class = "oe_view_nocontent_create">
+                    Create a new Job.
+                </p><p>
+                    Organize your activities (plan tasks, track issues, invoice timesheets) for Jobs.
+                </p>
+            </field>
+        </record>
+
+        <record id = "open_view_sites_all" model = "ir.actions.act_window">
+            <field name = "name">Sites</field>
+            <field name = "res_model">res.partner</field>
+            <field name = "view_type">form</field>
+            <field name = "domain">[('type','=','job')]</field>
+            <field name = "view_mode">tree,form</field>
+            <field name = "context">{'default_type': 'job', 'default_company_type': 'person',}</field>
+            <field name = "help" type = "html">
+                <p class = "oe_view_nocontent_create">
+                    Create a new Site
+                </p><p>
+                    Sites are the places you visit on a Job.
+                </p>
+            </field>
+        </record>
+
+        <menuitem action = "open_view_job_all" id = "menu_jobs" name = "Jobs" parent = "menu_main_jobs" sequence = "10"/>
+
+        <menuitem action = "open_view_sites_all" id = "menu_sites" name = "Sites" parent = "menu_main_jobs" sequence = "15"/>
+
+        <record id = "act_project_project_2_project_jobs_all" model = "ir.actions.act_window">
+            <field name = "name">Jobs</field>
+            <field name = "res_model">project.project</field>
+            <field name = "view_mode">tree,form</field>
+            <field name = "domain">
+               [('project_type','=','job')]
+            </field>
+            <field name = "context">{
+                'search_default_subscription_project_id': [active_id],
+                'default_subscription_project_id': active_id,
+                'default_project_type': 'job',
+            }</field>
+            <field name = "search_view_id" ref = "project.view_project_project_filter"/>
+            <field name = "view_id" ref="view_project_tree"/>
+            <field name = "help" type = "html">
+                <p class = "oe_view_nocontent_create">
+                    Here, you can create new Jobs
+                </p>
+                <p>
+                    You can now manage your Jobs in order to get things done efficiently. Plan, track progress, discuss, attach documents, etc.
+                </p>
+            </field>
+        </record>
+
+        <record id = "view_project_search_inherited" model="ir.ui.view">
+            <field name = "name">project.project.search.inherited</field>
+            <field name = "model">project.project</field>
+            <field name = "inherit_id" ref = "project.view_project_project_filter"/>
+            <field name = "arch" type = "xml">
+                <field name = "name" position = "after">
+                   <field name = "subscription_project_id"/>
+                   <filter name = "subscriptions" string = "Subscription Projects"  domain="[('project_type', '=', 'subscription')]"/> 
+                   <filter name = "jobs" string = "Job Projects"  domain="[('project_type', '=', 'job')]"/>
+                   <separator/>
+                </field>
+            </field>
+        </record>
+ 
+        <record id = "project.open_view_project_all" model = "ir.actions.act_window">
+            <field name = "context">{'search_default_subscriptions': 1,}</field>
+        </record>
+
+        <record id = "view_project_kanban_inherited" model = "ir.ui.view">
+            <field name = "name">project.project.kanban.inherited</field>
+            <field name = "model">project.project</field>
+            <field name = "inherit_id" ref = "project.view_project_kanban"/>
+            <field name = "priority">16</field>
+            <field name = "arch" type = "xml">
+                <field name = "use_tasks" position = "after">
+                    <field name = "subscription_project_id"/>
+                    <field name = "project_type"/>
+                    <field name = "job_count"/>
+                    <field name = "partner_id"/>
+                </field>
+                <xpath expr="//t[@t-esc='record.name.value']" position="replace" >
+                    <div attrs="{'invisible': [('project_type', '!=', 'subscription')]}" >
+                        <!--
+                        Subscription:<br/>
+                        -->
+                        <t t-esc="record.name.value"/>
+                        <br/>for <t t-esc="record.partner_id.value"/>
+                    </div>
+                    <div attrs="{'invisible': [('project_type', '!=', 'job')]}" >
+                        <!-- 
+                        Job:<br/>
+                        -->
+                        <i class="fa fa-wrench fa-lg" title="Job"/> <t t-esc="record.name.value"/>
+                        <br/>for <t t-esc="record.subscription_project_id.value"/>
+                        <br/>for <t t-esc="record.partner_id.value"/>
+                    </div>
+                </xpath>
+                <xpath expr = "//div[contains(@class, 'o_project_kanban_box')]/div[last()]" position = "before">
+                    <div attrs = "{'invisible': [('project_type', '!=', 'subscription')]}" class = "o_project_kanban_box">
+                        <a name = "%(act_project_project_2_project_jobs_all)d" type = "action"
+                            t-attf-data-context = "{'default_subscription_project_id': [active_id],}">
+                            <span class = "o_label">Jobs</span>
+                        </a>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+        <record id = "act_project_project_2_job_daily_report_all" model = "ir.actions.act_window">
+            <field name = "name">Daily Report</field>
+            <field name = "res_model">job.daily.report</field>
+            <field name = "view_mode">tree,form</field>
+            <field name = "context">{
+                'default_job_id': active_id,
+            }</field>
+            <field name = "help" type = "html">
+                <p class = "oe_view_nocontent_create">
+                    Here, you can create new Daily Reports
+                </p>
+            </field>
+        </record>
+
+        <record id = "open_daily_report" model = "ir.actions.act_window">
+            <field name = "name">Daily Report</field>
+            <field name = "res_model">job.daily.report</field>
+            <field name = "view_mode">tree,form</field>
+            <field name = "context">{
+            }</field>
+            <field name = "help" type = "html">
+                <p class = "oe_view_nocontent_create">
+                    Here, you can create new Daily Reports
+                </p>
+            </field>
+        </record>
+
+        <menuitem action = "open_daily_report" id = "menu_daily_reports" name = "Daily Reports" parent = "menu_main_jobs" sequence = "20"/>
+
+
+
+    <record id = "view_project_form_inherited" model = "ir.ui.view">
+        <field name = "name">project.project.form.inherited</field>
+        <field name = "model">project.project</field>
+        <field name = "inherit_id" ref = "project.edit_project"/>
+        <field name = "priority">26</field>
+        <field name = "arch" type = "xml">
+            <data>
+            <field name = "name" position = "after">
+               <field name = "project_type" invisible = "1"/>
+               <field name = "job_count" invisible = "1"/>
+               <field name = "subscription_project_id" invisible = "1"/>
+            </field>
+            <button name = "attachment_tree_view" position = "after">
+
+              <button class = "oe_stat_button" name = "%(act_project_project_2_project_jobs_all)d"
+                       type = "action" icon = "fa-wrench"
+                       attrs = "{'invisible': [('project_type', '!=', 'subscription')]}"
+                       context = "{'default_partner_id': partner_id}"
+                       string="Jobs">
+              </button>
+
+               <button class = "oe_stat_button" name = "%(act_project_project_2_job_daily_report_all)d" 
+                       type = "action" icon = "fa-clipboard"
+                       attrs = "{'invisible':[('project_type', '!=', 'job')]}"
+                       context = "{'default_site_id': site_id, 'default_project_id': subscription_project_id, 'default_foreman_id': foreman_id, 'default_project_manager_id': user_id,'default_hotel_name': hotel_name, 'default_crew_id': crew_id, 'default_crew_employees': crew_employees }"
+                       string="Daily Reports">
+               </button>
+
+            </button>
+            <div name = "options_active" position = "attributes">
+                <attribute name = "invisible">{'invisible':[('project_type', 'in', ['job','subscription'])]}</attribute>
+            </div>
+
+            <field name="user_id" position="replace"/>
+            <field name="partner_id" position="replace"/>
+
+            <xpath expr = "//notebook/page" position = "before">
+                <page name = "Job" string = "Details" attrs = "{'invisible':[('project_type', 'in', ['subscription'])]}">
+                    <group>
+                       <group>
+                       <field name = "partner_id" />
+                       <field name = "date_from"/>
+                       <field name = "date_to"/>
+                       </group>
+                       <group>
+                       <field name = "user_id"/>
+                       <field name = "foreman_id"/>
+                       </group>
+                       <group>
+                       <field name = "site_id" 
+                              domain = "[('type','=','job'),('parent_id','=',partner_id)]" 
+                              context = "{'parent_id': partner_id, 'default_type': 'job', 'show_address': 1}"
+                              options = "{&quot;always_reload&quot;: True}"/>
+                       </group>
+                       <group>
+                       <field name = "crew_id"/>
+                       <field name = "crew_employees" widget = "many2many_tags"/>
+                       <field name = "hotel_name"
+                              context = "{'default_supplier': True, 'show_address': 1}"
+                              options = "{&quot;always_reload&quot;: True}"/>
+
+                       </group>
+                       <field name = "job_instructions"/>
+                    </group>
+                </page>
+            </xpath>
+
+            </data>
+        </field>
+    </record>
+
+
+    <!-- explicit list view definition -->
+    <!--
+    <record model = "ir.ui.view" id = "scaffold.list">
+      <field name = "name">scaffold list</field>
+      <field name = "model">scaffold.scaffold</field>
+      <field name = "arch" type = "xml">
+        <tree>
+          <field name = "name"/>
+          <field name = "value"/>
+          <field name = "value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model = "ir.actions.act_window" id = "scaffold.action_window">
+      <field name = "name">scaffold window</field>
+      <field name = "res_model">scaffold.scaffold</field>
+      <field name = "view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model = "ir.actions.server" id = "scaffold.action_server">
+      <field name = "name">scaffold server</field>
+      <field name = "model_id" ref = "model_scaffold_scaffold"/>
+      <field name = "code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name = "scaffold" id = "scaffold.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name = "Menu 1" id = "scaffold.menu_1" parent = "scaffold.menu_root"/>
+    <menuitem name = "Menu 2" id = "scaffold.menu_2" parent = "scaffold.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name = "List" id = "scaffold.menu_1_list" parent = "scaffold.menu_1"
+              action = "scaffold.action_window"/>
+    <menuitem name = "Server to list" id = "scaffold" parent = "scaffold.menu_2"
+              action = "scaffold.action_server"/>
+    -->
+  </data>
+</odoo>

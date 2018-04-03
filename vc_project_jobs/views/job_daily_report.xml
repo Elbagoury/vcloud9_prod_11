@@ -1,0 +1,299 @@
+<odoo>
+<data>
+
+<record id = "view_job_daily_report_tree" model = "ir.ui.view">
+     <field name = "name">job.daily.report.tree</field>
+     <field name = "model">job.daily.report</field>
+     <field name = "type">tree</field>
+     <field name = "arch" type = "xml">
+         <tree> 
+             <field name="state"/>
+             <field name="date"/>
+             <field name="name"/>
+             <field name="project_manager_id"/>
+             <field name="foreman_id"/>
+         </tree>
+     </field>
+</record>
+
+<record id = "view_job_daily_report" model = "ir.ui.view">
+     <field name = "name">job.daily.report.form</field>
+     <field name = "model">job.daily.report</field>
+     <field name = "arch" type = "xml">
+
+    <form class = "o_sale_order">
+    <header>
+        <button name = "action_submit" string = "Submit" states = 'draft' class = "btn-primary o_sale_confirm" type = "object"/>
+        <button name = "action_review" string = "Review (PM)" states = 'submitted' class = "btn-primary o_sale_confirm" type = "object"/>
+        <button name = "action_approve" string = "Approve (Payroll)"  states = 'reviewed' class = "btn-primary o_sale_confirm" type = "object"/>
+        <button name = "action_pay" string = "Paid (Payroll)" states = 'approved' class = "btn-primary o_sale_confirm"  type = "object"/>
+        <button name = "action_cancel" string = "Cancel (PM)"  states = 'draft,submitted,approved,reviewed,paid' type = "object"/>
+        <button name = "action_draft" string = "Reset to Draft"  states = 'cancelled' class = "btn-primary o_sale_confirm" type = "object"/>
+        <field name = "state" widget = "statusbar" statusbar_visible = "draft,submitted,approved,reviewed,paid"/>
+    </header>
+    
+    <sheet string = "daily_report">
+        <div  class = "oe_button_box" name = "button_box">
+            <button type = "object" name = "action_view_projects" class = "oe_stat_button" icon = "fa-puzzle-piece" string = "Project" >
+            </button>
+
+            <button class="oe_stat_button" name="%(hr_timesheet.act_hr_timesheet_line_by_project)d" 
+                    type="action" icon="fa-calendar" string="Timesheets" />
+                       
+        </div>
+        <group name = "header"><h2>DAILY REPORT <field name = "date"/></h2></group>
+        <group name = "title" >
+            <group name = "header">
+                <field name="job_id"/>          
+                <field required = "1" name = "customer_id" string = "Customer"/>
+                                
+                <field required = "1" name = "project_id" string = "Project"/>
+                <field required = "1" name = "name" string = "Job Description"/>
+                
+
+            </group>
+            <group name = "structure">
+                <field name = "weather_id" widget = "many2many_tags"/>
+            </group>
+            <group>
+                <field required = "1" name = "site_id" />
+                <field name = "site_reference" readonly = "1"/>
+                <field name = "county_id" readonly = "1"/>
+                <field name = "structure_type_id"/>
+                
+            </group>
+            <group>
+                <field name = "task_type_ids" widget="many2many_checkboxes"/>
+            </group>
+            <group name = "who">
+                <field name = "project_manager_id"/>
+                <field name = "foreman_id"/>
+                <field name = "crew_id" attrs="{'readonly': [('crew_readonly','=',True)],}"/>
+                <field name = "crew_employees" widget = "many2many_tags"/>
+                <field name = "crew_readonly" invisible="1"/>
+            </group>
+            <group>
+                <field name = "hotel_name"/>
+                <field name = "vehicle_ids" widget = "many2many_tags"/> 
+            </group>
+        </group>
+        <notebook>
+
+            <page string = "Employee Hours">
+
+                <field name = "employee_hours" 
+                       context = "{'default_type': 'employee','default_lunch': '0',}">
+                    <tree editable = "bottom" create="false">
+                        <field name = "cost_code_id" required = "1"/>
+                        <field name = "is_first" invisible="1"/>
+                        <field name = "employee_id"/>
+                        <field name = "job_class_id"/>
+                        <field name = "shop_time_start" invisible="1"/>
+                        <field name = "shop_time_start_str" 
+                               widget="timepicker" 
+                               options="{'step': '30', 'disableTextInput': true, 'selectOnBlur': true,'minTime': '2:00am', 'maxTime': '11:00pm', 'timeFormat': 'g:i a',}"/>
+                        <field name = "shop_time_end" invisible="1"/>
+                        <field name = "shop_time_end_str" 
+                               widget="timepicker" 
+                               options="{'step': '30', 'disableTextInput': true, 'minTime': '2:00am', 'maxTime': '11:00pm', 'timeFormat': 'g:i a',}"/>
+                        <field name = "driver_time_start" invisible="1"/>
+                        <field name = "driver_time_start_str" 
+                               widget="timepicker" 
+                               options="{'step': '30', 'disableTextInput': false, 'minTime': '2:00am', 'maxTime': '11:00pm', 'timeFormat': 'g:i a',}"/>
+                        <field name = "driver_time_arrive" invisible="1"/>
+                        <field name = "driver_time_arrive_str" 
+                               widget="timepicker" 
+                               options="{'step': '30', 'disableTextInput': false, 'minTime': '2:00am', 'maxTime': '11:00pm', 'timeFormat': 'g:i a',}"/>
+                        <field name = "lunch"/>
+                        <field name = "time_depart" invisible="1"/>
+                        <field name = "time_depart_str"
+                               widget="timepicker"
+                               options="{'step': '30', 'disableTextInput': true, 'minTime': '2:00am', 'maxTime': '11:00pm', 'timeFormat': 'g:i a',}"/>
+                        <field name = "driver_time_depart" invisible="1"/>
+                        <field name = "driver_time_depart_str" 
+                               widget="timepicker" 
+                               options="{'step': '30', 'disableTextInput': false, 'minTime': '2:00am', 'maxTime': '11:00pm', 'timeFormat': 'g:i a',}"/>
+                        <field name = "driver_time_end" invisible="1"/>
+                        <field name = "driver_time_end_str" 
+                               widget="timepicker" 
+                               options="{'step': '30', 'disableTextInput': true, 'minTime': '2:00am', 'maxTime': '11:00pm', 'timeFormat': 'g:i a',}"/>
+                        <field name = "total_regular_hours_before" invisible="1" string = "RB4"/>
+                        <field name = "total_regular_hours_during" invisible="1" string = "RD"/>
+                        <field name = "total_regular_hours" string = "Regular"/>
+                        <field name = "total_passenger_hours_before" invisible="1" string = "PB4"/>
+                        <field name = "total_passenger_hours_after" invisible="1" string = "PA"/>
+                        <field name = "total_passenger_hours" invisible="1" string = "Passenger"/>
+                        <field name = "total_drive_hours_before" invisible="1" string = "DB4"/>
+                        <field name = "total_drive_hours_after" invisible="1" string = "DA" />
+                        <field name = "total_drive_hours" string="Driving"/>
+                        <field name = "per_diem"/>                                                                                                                                              
+                        <field name = "approved" />
+                        <field name = "type" invisible = "1"/>
+                    </tree>
+                </field>
+
+            </page>    
+<!--
+            <page string = "PW Hours">
+                <field name = "prevailing_hours" context = "{'default_type': 'prevailing',}">
+                    <tree editable = "bottom" create="false">
+                        <field name = "employee_id"/>
+                        <field name = "job_class_id" required = "1"/>
+                        <field name = "shop_time_start_str" string = "From" 
+                               widget="timepicker" options="{'step': '30', 'disableTextInput': true, 'minTime': '6:00am', 'maxTime': '9:00pm', 'timeFormat': 'g:i a',}"/>
+                        <field name = "shop_time_end_str" string = "To" 
+                               widget="timepicker" options="{'step': '30', 'disableTextInput': true, 'minTime': '6:00am', 'maxTime': '9:00pm', 'timeFormat': 'g:i a',}"/>
+                        <field name = "total_regular_hours" string = "Total Hours"/>                                                                                                  
+                        <field name = "approved" />
+                        <field name = "type" invisible = "1"/>
+                    </tree>
+                </field>
+            </page>
+            <page string = "Standby">
+                <field name = "standby_hours"  context = "{'default_type': 'standby',}">
+                    <tree editable = "bottom" create="false">
+                        <field name = "employee_id"/>
+                        <field name = "shop_time_start_str" string = "From" 
+                               widget="timepicker" options="{'step': '30', 'disableTextInput': true, 'minTime': '6:00am', 'maxTime': '9:00pm', 'timeFormat': 'g:i a',}"/>
+                        <field name = "shop_time_end_str" string = "To" 
+                               widget="timepicker" options="{'step': '30', 'disableTextInput': true, 'minTime': '6:00am', 'maxTime': '9:00pm', 'timeFormat': 'g:i a',}"/>
+                        <field name = "total_regular_hours" string = "Total Hours"/>   
+                        <field name = "standby_reason"/>
+                        <field name = "approved" string = "Approved"/>
+                        <field name = "type" invisible = "1"/>
+                    </tree>
+                </field>
+            </page>
+-->
+
+ <!--
+           <page string = "Other Information">
+                <group>
+                <group>
+                </group>
+                <group>
+
+                </group>
+                </group>
+            </page>
+
+-->
+            <page string = "All Hours (PM only)">
+
+            <field name = "all_hours" context = "{'default_type': 'all'}">
+                    <tree editable = "bottom" create="false">
+                        <field name = "cost_code_id" required = "1"/>
+                        <field name = "employee_id"/>
+                        <field name = "job_class_id"/>
+
+                        <field name = "total_regular_hours_before" invisible="1" string = "RB4"/>
+                        <field name = "total_regular_hours_during" invisible="1" string = "RD"/>
+                        <field name = "lunch" invisible="1"/>
+                        <field name = "total_regular_hours" string = "Regular"/>
+                        <field name = "total_passenger_hours_before" invisible="1" string = "PB4"/>
+                        <field name = "total_passenger_hours_after" invisible="1" string = "PA"/>
+                        <field name = "total_passenger_hours" string = "Passenger"/>
+                        <field name = "total_drive_hours_before" invisible="1" string = "DB4"/>
+                        <field name = "total_drive_hours_after" invisible="1" string = "DA" />
+                        <field name = "total_drive_hours" string="Driving"/>
+
+                        <field name = "total_pw_hours" string = "PW Hours"/>
+                        <field name = "total_standby_hours" string = "Standby Hours"/>
+                        <field name = "total_hours" string = "Total Hours"/>
+                        <field name = "approved" />
+                        <field name = "type" invisible = "1"/>
+
+                </tree>
+            </field>
+            </page>
+            <page string = "Rates (Payroll only)">
+            <field name="rates" context = "{'default_type': 'rates'}">
+                    <tree editable = "bottom" create="false">
+                        <field name="cost_code_id" invisible="1" required="1"/>
+                        <field name="employee_id"/>
+
+                        <field name="total_regular_hours_before" invisible="1" string="RB4"/>
+                        <field name="total_regular_hours_during" invisible="1" string="RD"/>
+                        <field name="lunch" invisible="1"/>
+                        <field name = "total_passenger_hours_before" invisible="1" string = "PB4"/>
+                        <field name = "total_passenger_hours_after" invisible="1" string = "PA"/>
+                        <field name="total_regular_hours" invisible="1"/>
+                        <field name="total_passenger_hours_before" invisible="1" string="PB4"/>
+                        <field name="total_passenger_hours_after" invisible="1" string="PA"/>
+                        <field name="total_passenger_hours" invisible="1"/>
+                        <field name="total_drive_hours_before" invisible="1" string="DB4"/>
+                        <field name="total_drive_hours_after" invisible="1" string="DA"/>
+                        <field name="total_drive_hours" invisible="1"/>
+                        <field name="total_pw_hours" invisible="1"/>
+                        <field name="total_standby_hours" invisible="1"/>
+                        <field name="total_hours" invisible="1"/>
+
+                        <field name="employee_standard_rate" invisible="1"/>
+                        <field name="job_class_id" invisible="1"/>
+                        <field name="timesheet_cost" invisible="1"/>
+                        <field name="regular_pay" invisible="1"/>
+                        <field name="regular_pay_str"/>
+                        <field name="passenger_cost" invisible="1"/>
+                        <field name="passenger_pay" invisible="1"/>
+                        <field name="passenger_pay_str"/>
+                        <field name="drive_cost" invisible="1"/>
+                        <field name="drive_pay" invisible="1"/>
+                        <field name="drive_pay_str"/>
+                        <field name="pw_cost" invisible="1"/>
+                        <field name="pw_pay" invisible="1"/>
+                        <field name="pw_pay_str"/>
+                        <field name="standby_cost" invisible="1"/>
+                        <field name="standby_pay" invisible="1"/>
+                        <field name="standby_pay_str"/>
+                        <field name="total_pay" invisible="1"/>
+                        <field name="total_pay_str"/>
+                        <field name="approved"/>
+                        <field name="type" invisible="1"/>
+
+               </tree>
+            </field>
+</page>
+           <!-- <page string = "Job Cost (Payroll only)"/> -->
+        </notebook>
+            <notebook>
+                <page string = "Internal Notes">
+                    <field name = "notes" />
+               </page>
+            </notebook>
+  
+            <notebook>
+                <page string = "Foreman Signoff">
+                    <group>
+                        <label string="By signing you indicate as Foreman that hours on this report are accurately reported."/>            
+                        <group>
+                            <field name = "foreman_signature" string="Foreman" widget = "signature" width = "250" />
+                        </group>
+                        <group>
+                            <field name = "foreman_signature_date"/>
+                        </group>
+                    </group>
+                </page>
+                <page string = "Project Manager Signoff">
+                    <group>
+                        <label string="By signing you indicate as Project Manager that hours on this report can be billed."/>            
+                        <group>
+                            <field name = "project_manager_signature" string="Project Manager" widget = "signature" width = "250" />
+                        </group>
+                        <group>
+                            <field name = "project_manager_signature_date"/>
+                        </group>
+                    </group>
+                </page>
+        </notebook>
+  </sheet>
+                  <div class = "oe_chatter">
+                    <field name = "message_follower_ids" widget = "mail_followers"/>
+                    <field name = "message_ids" widget = "mail_thread"/>
+                </div>
+</form>
+
+     </field>
+</record>
+
+</data>
+</odoo>

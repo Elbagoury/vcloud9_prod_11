@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<odoo>
+
+
+
+    <record id = "sale_subscription_view_form_projects" model = "ir.ui.view">
+        <field name = "name">sale.subscription.form.view.projects</field>
+        <field name = "model">sale.subscription</field>
+        <field name = "inherit_id" ref = "sale_contract.sale_subscription_view_form"></field>
+        <field name = "arch" type="xml">
+               <button name="action_subscription_invoice" position="after">
+                        <button class="oe_stat_button"
+                            icon="fa-puzzle-piece"
+                            name="action_subscription_projects"
+                            type="object">
+                            <field name="project_count" widget="statinfo" string="Projects"/>
+                        </button>
+               </button>
+        </field>
+    </record>
+
+</odoo>
